@@ -1,0 +1,39 @@
+{
+  "name": "nextjs-with-prismic-starter",
+  "version": "1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine",
+    "format": "prettier --write \"{.slicemachine,.storybook,components,context,customtypes,docs,pages,slices,styles,utils}/**/*.{js,jsx,ts,tsx,css,scss,json,yaml,md}\""
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.2",
+    "@heroicons/react": "^2.0.11",
+    "@prismicio/client": "^6.7.1",
+    "@prismicio/helpers": "^2.3.5",
+    "@prismicio/next": "^0.1.5",
+    "@prismicio/react": "^2.5.0",
+    "@prismicio/slice-simulator-react": "^0.2.2",
+    "next": "^12.3.1",
+    "next-seo": "^5.5.0",
+    "next-sitemap": "^3.1.22",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.36.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-next": "^12.3.1",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.9",
+    "slice-machine-ui": "^0.4.2"
+  },
+  "resolutions": {
+    "nth-check": "2.0.1"
+  }
+}

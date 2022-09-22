@@ -50,6 +50,11 @@
     text-decoration: none;
     font-weight: 700;
     font-size: var(--fs-800);
+    transition: all 200ms;
+
+    &:hover {
+      color: $c-ivory;
+    }
   }
 }
 
@@ -64,5 +69,11 @@
     width: 1.5rem;
     position: relative;
     height: 1.5rem;
+    transition: all 200ms;
+    color: $c-charcoal;
+
+    &:hover {
+      color: $c-ivory;
+    }
   }
 }

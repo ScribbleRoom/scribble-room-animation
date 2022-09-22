@@ -36,9 +36,7 @@ export const Header = ({ slices, large_logo, small_logo, socials }) => {
         <div className={styles.burger_icon} />
       </button>
 
-      {menuIsOpen && (
-        <Megamenu menuIsOpen={menuIsOpen} slices={slices} socials={socials} />
-      )}
+      <Megamenu menuIsOpen={menuIsOpen} slices={slices} socials={socials} />
     </header>
   )
 }

@@ -1,43 +1,32 @@
 import { Fragment } from "react"
 import { PrismicLink } from "@prismicio/react"
-import Image from "next/image"
+
+// Icons
+import { YouTubeLogo } from "../icons/YouTubeLogo"
+import { VimeoLogo } from "../icons/VimeoLogo"
+import { Linkedin } from "../icons/Linkedin"
+import { InstagramLogo } from "../icons/InstagramLogo"
 
 export const SocialLinks = ({ socials }) => (
   <Fragment>
     {socials?.instagramLink?.url && (
       <PrismicLink field={socials.instagramLink}>
-        <Image
-          src="/assets/icons/instagram-logo.svg"
-          layout="fill"
-          alt="Instagram Logo"
-        />
+        <InstagramLogo />
       </PrismicLink>
     )}
     {socials?.linkedinLink?.url && (
       <PrismicLink field={socials.linkedinLink}>
-        <Image
-          src="/assets/icons/linkedin-logo.svg"
-          layout="fill"
-          alt="LinkedIn Logo"
-        />
+        <Linkedin />
       </PrismicLink>
     )}
     {socials?.vimeoLink?.url && (
       <PrismicLink field={socials.vimeoLink}>
-        <Image
-          src="/assets/icons/vimeo-logo.svg"
-          layout="fill"
-          alt="Vimeo Logo"
-        />
+        <VimeoLogo />
       </PrismicLink>
     )}
     {socials?.youtubeLink?.url && (
       <PrismicLink field={socials.youtubeLink}>
-        <Image
-          src="/assets/icons/youtube-logo.svg"
-          layout="fill"
-          alt="YouTube Logo"
-        />
+        <YouTubeLogo />
       </PrismicLink>
     )}
   </Fragment>

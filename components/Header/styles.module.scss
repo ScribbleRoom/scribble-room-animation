@@ -45,7 +45,7 @@
   cursor: pointer;
   position: relative;
   z-index: 150;
-  width: 2.5rem;
+  width: max-content;
   height: 2rem;
 
   & .burger_icon:first-of-type {
@@ -70,7 +70,7 @@
 }
 
 .burger_icon {
-  width: 100%;
+  width: 2rem;
   height: 0.1875rem;
   background-color: $c-charcoal;
 }

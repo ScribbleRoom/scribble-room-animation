@@ -28,9 +28,10 @@ export async function getStaticProps({ previewData }) {
   const page = await client.getSingle("contact")
   const header = await client.getSingle("header")
   const footer = await client.getSingle("footer")
+  const socials = await client.getSingle("socials")
 
   return {
-    props: { header, footer, ...page },
+    props: { header, footer, socials, ...page },
   }
 }
 

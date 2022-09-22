@@ -1,0 +1,25 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "linkText": "minute"
+      }
+    ],
+    "primary": {
+      "sectionTitle": [
+        {
+          "type": "heading4",
+          "text": "Limited",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "footer_links"
+  }
+]

@@ -5,10 +5,18 @@
   "status": true,
   "json": {
     "Main": {
-      "logo": {
+      "large_logo": {
         "type": "Image",
         "config": {
-          "label": "Logo",
+          "label": "Large Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "small_logo": {
+        "type": "Image",
+        "config": {
+          "label": "Small Logo",
           "constraint": {},
           "thumbnails": []
         }

@@ -1,12 +1,8 @@
 import { NextSeo } from "next-seo"
 
 export const Seo = ({ metaTitle, metaDescription, metaImage, url }) => {
-  const absoluteUrl = `https://example.com${url ? url : ""}` // TODO: Change URL
-  const siteName = "Example Site Name" // TODO: Change site name
-  const twitter = {
-    handle: "@example", // TODO: Change Twitter handle
-    site: "@example", // TODO: Change Twitter site
-  }
+  const absoluteUrl = `https://scribbleroomanimation.com${url ? url : ""}`
+  const siteName = "Scribble Room Animation"
 
   const seoConfig = {
     title: metaTitle,
@@ -26,13 +22,10 @@ export const Seo = ({ metaTitle, metaDescription, metaImage, url }) => {
       ],
       site_name: siteName,
     },
-
     twitter: {
-      handle: twitter.handle,
-      site: twitter.site,
       cardType: "summary_large_image",
     },
-    additionalLinkTags: [{ rel: "icon", href: "/favicon.png" }], // TODO: Make sure favicon url is correct
+    additionalLinkTags: [{ rel: "icon", href: "/favicon.ico" }],
   }
 
   return <NextSeo {...seoConfig} />

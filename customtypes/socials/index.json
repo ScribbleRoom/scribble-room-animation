@@ -1,0 +1,46 @@
+{
+  "id": "socials",
+  "label": "Socials",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "instagram_link": {
+        "type": "Link",
+        "config": {
+          "label": "Instagram Link",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "select": null
+        }
+      },
+      "vimeo_link": {
+        "type": "Link",
+        "config": {
+          "label": "Vimeo Link",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "select": null
+        }
+      },
+      "youtube_link": {
+        "type": "Link",
+        "config": {
+          "label": "YouTube Link",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "select": null
+        }
+      },
+      "linkedin_link": {
+        "type": "Link",
+        "config": {
+          "label": "LinkedIn Link",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "select": null
+        }
+      }
+    }
+  }
+}

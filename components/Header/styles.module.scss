@@ -1,0 +1,143 @@
+@use "../../sass/abstracts/" as *;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 71.25rem;
+  margin: auto;
+  padding: 1rem;
+
+  @include mq("small") {
+    padding: 1.5rem 1rem;
+  }
+}
+
+.large_logo {
+  display: none;
+  width: 8rem;
+  z-index: 150;
+  position: relative;
+
+  @include mq("small") {
+    display: block;
+  }
+
+  @include mq("large") {
+    width: 10rem;
+  }
+}
+
+.small_logo {
+  display: block;
+  z-index: 150;
+  position: relative;
+
+  @include mq("small") {
+    display: none;
+  }
+}
+
+.dialog {
+  position: relative;
+  z-index: 100;
+}
+
+.scrollable_container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.dialog_panel {
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: $c-yellow;
+}
+
+.dialog_panel_contents {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  nav {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 150;
+  width: 2.5rem;
+  height: 2rem;
+
+  & .burger_icon:first-of-type {
+    transform: translateY(-0.2rem);
+    transition: all 200ms;
+  }
+
+  & .burger_icon:last-of-type {
+    transform: translateY(0.2rem);
+    transition: all 200ms;
+  }
+
+  &.is_open {
+    & .burger_icon:first-of-type {
+      transform: rotate(45deg) translate(0.15rem, 0.2rem);
+    }
+
+    & .burger_icon:last-of-type {
+      transform: rotate(-45deg) translateX(-0.075rem);
+    }
+  }
+}
+
+.burger_icon {
+  width: 100%;
+  height: 0.2rem;
+  background-color: $c-charcoal;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  height: max-content;
+  width: 100%;
+  padding: 4rem 0;
+
+  & a {
+    color: $c-charcoal;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: var(--fs-800);
+  }
+}
+
+.social_links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  & a {
+    width: 1.5rem;
+    position: relative;
+    height: 1.5rem;
+  }
+}

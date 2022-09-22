@@ -37,9 +37,10 @@ export async function getStaticProps({ params, previewData }) {
   const page = await client.getByUID("page", params.uid)
   const header = await client.getSingle("header")
   const footer = await client.getSingle("footer")
+  const socials = await client.getSingle("socials")
 
   return {
-    props: { header, footer, ...page },
+    props: { header, footer, socials, ...page },
   }
 }
 

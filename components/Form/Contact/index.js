@@ -8,7 +8,7 @@ export const ContactForm = () => {
   const { register, handleSubmit } = useForm()
 
   const onSubmit = async (data) => {
-    // POST form data to API like Formspree
+    // TODO: POST form data to API like Formspree
     setIsSubmitted(true)
   }
 

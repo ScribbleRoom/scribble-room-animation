@@ -5,8 +5,8 @@
   "description": "Hero",
   "variations": [
     {
-      "id": "default",
-      "name": "Default",
+      "id": "text",
+      "name": "Text",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "Hero",
@@ -14,32 +14,55 @@
         "title": {
           "type": "StructuredText",
           "config": {
-            "single": "heading1",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1"
           }
         },
         "description": {
           "type": "StructuredText",
           "config": {
-            "single": "paragraph",
             "label": "Description",
-            "placeholder": "A nice description of your feature"
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "strong,em,hyperlink,paragraph"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "video",
+      "name": "Video",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Hero",
+      "primary": {
+        "show_logo": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Logo",
+            "placeholder_false": "No",
+            "placeholder_true": "Yes",
+            "default_value": false
           }
         },
-        "link": {
+        "logo": {
+          "type": "Image",
+          "config": {
+            "label": "Logo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "video": {
           "type": "Link",
           "config": {
-            "label": "Link",
+            "label": "Video",
             "placeholder": "",
-            "select": null
-          }
-        },
-        "linkText": {
-          "type": "Text",
-          "config": {
-            "label": "Link Text",
-            "placeholder": ""
+            "select": "media"
           }
         }
       },

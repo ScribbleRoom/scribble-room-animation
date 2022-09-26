@@ -19,6 +19,7 @@
     "@prismicio/next": "^0.1.5",
     "@prismicio/react": "^2.5.0",
     "@prismicio/slice-simulator-react": "^0.2.2",
+    "@vimeo/player": "^2.17.1",
     "framer-motion": "^7.3.6",
     "next": "^12.3.1",
     "next-seo": "^5.5.0",

@@ -1,6 +1,6 @@
 [
   {
-    "variation": "default",
+    "variation": "text",
     "version": "sktwi1xtmkfgx8626",
     "items": [
       {}
@@ -9,22 +9,44 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Medicine",
+          "text": "Winter",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Adipisicing esse ad incididunt labore ullamco aliquip veniam sit consectetur veniam sunt sit veniam proident occaecat.",
+          "text": "Eu incididunt incididunt magna ut laboris in aliqua cillum id eu id ut culpa cillum. Incididunt laboris excepteur tempor mollit elit. Velit irure amet sit culpa velit aliqua.",
           "spans": []
         }
-      ],
-      "link": {
-        "link_type": "Web",
-        "url": "http://google.com"
+      ]
+    },
+    "slice_type": "hero"
+  },
+  {
+    "variation": "video",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "show_logo": false,
+      "logo": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a"
       },
-      "linkText": "frozen"
+      "video": {
+        "link_type": "Media",
+        "name": "mock",
+        "kind": "image",
+        "url": "https://source.unsplash.com/random",
+        "size": "10kB"
+      }
     },
     "slice_type": "hero"
   }

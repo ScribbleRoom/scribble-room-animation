@@ -1,0 +1,40 @@
+@use "../../../sass/abstracts/" as *;
+
+.section {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+.video_container {
+  position: relative;
+  max-width: 100vw;
+
+  @include mq("large") {
+    max-height: 75vh;
+  }
+
+  & video {
+    width: 100vw;
+    object-fit: cover;
+    max-height: max-content;
+    user-select: none;
+    pointer-events: none;
+  }
+}
+
+.logo_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  min-width: 35vw;
+  height: 20rem;
+}

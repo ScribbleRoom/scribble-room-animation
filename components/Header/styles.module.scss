@@ -40,13 +40,14 @@
 }
 
 .menu_button {
-  background: none;
+  background: red;
   border: none;
   cursor: pointer;
   position: relative;
   z-index: 150;
   width: max-content;
   height: 2rem;
+  // padding: 0;
 
   & .burger_icon:first-of-type {
     transform: translateY(-0.2rem);

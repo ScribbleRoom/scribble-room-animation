@@ -37,7 +37,7 @@
 
     @include mq("medium") {
       flex-direction: row;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       align-items: flex-end;
     }
   }
@@ -102,12 +102,6 @@
   & svg {
     width: 1.5rem;
     height: 1.5rem;
-  }
-
-  margin-top: 0.5rem;
-
-  @include mq("medium") {
-    margin-top: 0;
   }
 }
 

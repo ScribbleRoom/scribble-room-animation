@@ -2,8 +2,8 @@
 
 .section {
   overflow: hidden;
-  position: fixed;
-  top: 0;
+  position: relative;
+  margin-top: -8rem;
 }
 
 .video_container {
@@ -31,6 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 25;
 }
 
 .logo {

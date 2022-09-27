@@ -1,0 +1,47 @@
+@use "../abstracts/" as *;
+
+.button {
+  width: 100%;
+
+  @include mq("x-small") {
+    width: max-content;
+  }
+
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+
+  text-decoration: none;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: $c-ivory;
+
+  & svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &.primary {
+    background-color: $c-orange;
+    transition: all 200ms;
+
+    &:hover {
+      background-color: $c-orange-dark;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    }
+  }
+
+  &.secondary {
+    background-color: $c-charcoal;
+    transition: all 200ms;
+
+    &:hover {
+      background-color: $c-charcoal-75;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    }
+  }
+}

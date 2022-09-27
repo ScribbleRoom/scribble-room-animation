@@ -13,8 +13,8 @@
           "description": "CallToAction",
           "variations": [
             {
-              "id": "default",
-              "name": "Default",
+              "id": "narrow-centered",
+              "name": "NarrowCentered",
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
               "description": "CallToAction",
@@ -26,6 +26,15 @@
                     "placeholder": "",
                     "allowTargetBlank": true,
                     "single": "heading2"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,strong,em,hyperlink"
                   }
                 },
                 "link": {
@@ -42,6 +51,103 @@
                     "label": "Link Text",
                     "placeholder": ""
                   }
+                },
+                "buttonIcon": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Button Icon",
+                    "placeholder": "",
+                    "options": [
+                      "Right Arrow",
+                      "Messages",
+                      "Paint Brush"
+                    ]
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "wideWithGreyBackground",
+              "name": "Wide - With Grey Background",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "CallToAction",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,strong,em,hyperlink"
+                  }
+                },
+                "primaryLink": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Primary Link",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "select": null
+                  }
+                },
+                "primaryLinkText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Primary Link Text",
+                    "placeholder": ""
+                  }
+                },
+                "primaryLinkIcon": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Primary Link Icon",
+                    "placeholder": "",
+                    "options": [
+                      "Right Arrow",
+                      "Messages",
+                      "Paint Brush"
+                    ]
+                  }
+                },
+                "secondaryLink": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Secondary Link",
+                    "placeholder": "Optional",
+                    "allowTargetBlank": false,
+                    "select": null
+                  }
+                },
+                "secondaryLinkText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary Link Text",
+                    "placeholder": ""
+                  }
+                },
+                "secondaryLinkIcon": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Secondary Link Icon",
+                    "placeholder": "",
+                    "options": [
+                      "Right Arrow",
+                      "Messages",
+                      "Paint Brush"
+                    ]
+                  }
                 }
               },
               "items": {},
@@ -50,8 +156,8 @@
           ]
         },
         "mocks": {
-          "default": {
-            "variation": "default",
+          "narrow-centered": {
+            "variation": "narrow-centered",
             "version": "sktwi1xtmkfgx8626",
             "items": [
               {}
@@ -60,7 +166,14 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Label",
+                  "text": "Composed",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Proident cupidatat aliqua dolore aute sunt ea occaecat mollit in ut nisi voluptate excepteur aliquip. Exercitation velit voluptate dolor esse velit eu veniam. Aliqua officia minim nisi dolore nostrud dolore exercitation cillum id ullamco excepteur exercitation.",
                   "spans": []
                 }
               ],
@@ -68,7 +181,44 @@
                 "link_type": "Web",
                 "url": "https://slicemachine.dev"
               },
-              "linkText": "essential"
+              "linkText": "garage",
+              "buttonIcon": "Messages"
+            },
+            "slice_type": "call_to_action"
+          },
+          "wideWithGreyBackground": {
+            "variation": "wideWithGreyBackground",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Distance",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Irure est aliqua esse ad reprehenderit culpa non culpa ut deserunt et labore amet. Minim labore reprehenderit labore nulla veniam duis sunt aute. Eiusmod cupidatat deserunt exercitation.",
+                  "spans": []
+                }
+              ],
+              "primaryLink": {
+                "link_type": "Web",
+                "url": "https://prismic.io"
+              },
+              "primaryLinkText": "simplest",
+              "primaryLinkIcon": "Right Arrow",
+              "secondaryLink": {
+                "link_type": "Web",
+                "url": "http://google.com"
+              },
+              "secondaryLinkText": "case",
+              "secondaryLinkIcon": "Right Arrow"
             },
             "slice_type": "call_to_action"
           }
@@ -77,7 +227,18 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "narrow-centered": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/CallToAction/narrow-centered/preview.png",
+            "width": 1600,
+            "height": 710
+          },
+          "wideWithGreyBackground": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/CallToAction/wideWithGreyBackground/preview.png",
+            "width": 2562,
+            "height": 548
+          }
+        }
       },
       "hero": {
         "library": "slices",

@@ -1,14 +1,15 @@
-import { PrismicLink, PrismicRichText } from "@prismicio/react"
+import { NarrowCentered } from "./NarrowCentered"
+import { WideWithGreyBackground } from "./WideWithGreyBackground"
 
-const CallToAction = ({
-  slice: {
-    primary: { title, link, linkText },
-  },
-}) => (
-  <section className="container">
-    <PrismicRichText field={title} />
-    <PrismicLink field={link}>{linkText}</PrismicLink>
-  </section>
-)
+const CallToAction = ({ slice: { primary, items, variation }, index }) => {
+  const componentMap = {
+    "narrow-centered": NarrowCentered,
+    wideWithGreyBackground: WideWithGreyBackground,
+  }
+
+  const VariableComponent = componentMap[variation]
+
+  return <VariableComponent {...primary} items={items} index={index} />
+}
 
 export default CallToAction

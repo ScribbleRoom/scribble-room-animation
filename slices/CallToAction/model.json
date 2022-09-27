@@ -5,8 +5,8 @@
   "description": "CallToAction",
   "variations": [
     {
-      "id": "default",
-      "name": "Default",
+      "id": "narrow-centered",
+      "name": "NarrowCentered",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "CallToAction",
@@ -18,6 +18,15 @@
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
           }
         },
         "link": {
@@ -33,6 +42,103 @@
           "config": {
             "label": "Link Text",
             "placeholder": ""
+          }
+        },
+        "buttonIcon": {
+          "type": "Select",
+          "config": {
+            "label": "Button Icon",
+            "placeholder": "",
+            "options": [
+              "Right Arrow",
+              "Messages",
+              "Paint Brush"
+            ]
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "wideWithGreyBackground",
+      "name": "Wide - With Grey Background",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CallToAction",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "primaryLink": {
+          "type": "Link",
+          "config": {
+            "label": "Primary Link",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        },
+        "primaryLinkText": {
+          "type": "Text",
+          "config": {
+            "label": "Primary Link Text",
+            "placeholder": ""
+          }
+        },
+        "primaryLinkIcon": {
+          "type": "Select",
+          "config": {
+            "label": "Primary Link Icon",
+            "placeholder": "",
+            "options": [
+              "Right Arrow",
+              "Messages",
+              "Paint Brush"
+            ]
+          }
+        },
+        "secondaryLink": {
+          "type": "Link",
+          "config": {
+            "label": "Secondary Link",
+            "placeholder": "Optional",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        },
+        "secondaryLinkText": {
+          "type": "Text",
+          "config": {
+            "label": "Secondary Link Text",
+            "placeholder": ""
+          }
+        },
+        "secondaryLinkIcon": {
+          "type": "Select",
+          "config": {
+            "label": "Secondary Link Icon",
+            "placeholder": "",
+            "options": [
+              "Right Arrow",
+              "Messages",
+              "Paint Brush"
+            ]
           }
         }
       },

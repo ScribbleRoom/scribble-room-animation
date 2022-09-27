@@ -1,0 +1,33 @@
+@use "../../../sass/abstracts/" as *;
+
+.section {
+  padding: 4rem 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @include mq("small") {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.description {
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @include mq("small") {
+    margin-bottom: 1.5rem;
+  }
+
+  & * {
+    font-size: inherit;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}

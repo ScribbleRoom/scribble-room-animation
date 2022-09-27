@@ -5,6 +5,21 @@
   "status": true,
   "json": {
     "Main": {
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "email_address": {
+        "type": "Text",
+        "config": {
+          "label": "Email Address",
+          "placeholder": ""
+        }
+      },
       "navigation_links": {
         "type": "Group",
         "config": {

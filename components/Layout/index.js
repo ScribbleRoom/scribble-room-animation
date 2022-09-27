@@ -16,7 +16,7 @@ export const Layout = ({ seo, header, footer, socials, children }) => {
       <Seo {...seo} />
       <Header {...header?.data} socials={socialsData} />
       <main>{children}</main>
-      <Footer {...footer?.data} />
+      <Footer {...footer?.data} socials={socialsData} />
     </Fragment>
   )
 }

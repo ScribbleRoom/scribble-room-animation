@@ -27,7 +27,7 @@ const Logos = ({ slice: { items } }) => {
     }, 8000)
   }, [sliceStart, sliceEnd, items])
 
-  const variants = {
+  const listVariants = {
     visible: {
       opacity: 1,
       transition: {
@@ -60,7 +60,7 @@ const Logos = ({ slice: { items } }) => {
         <AnimatePresence exitBeforeEnter>
           <m.ul
             className={styles.list}
-            variants={variants}
+            variants={listVariants}
             initial="hidden"
             animate="visible"
             exit="exit"

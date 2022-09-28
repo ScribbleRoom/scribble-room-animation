@@ -59,6 +59,7 @@ const Logos = ({ slice: { items } }) => {
       <div className="container">
         <AnimatePresence exitBeforeEnter>
           <m.ul
+            layout
             className={styles.list}
             variants={listVariants}
             initial="hidden"

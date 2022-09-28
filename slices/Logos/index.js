@@ -24,7 +24,7 @@ const Logos = ({ slice: { items } }) => {
         setSliceEnd(6)
         setLogos(items.slice(sliceStart, sliceEnd))
       }
-    }, 3000)
+    }, 8000)
   }, [sliceStart, sliceEnd, items])
 
   const variants = {

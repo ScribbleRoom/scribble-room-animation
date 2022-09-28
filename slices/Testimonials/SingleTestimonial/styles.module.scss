@@ -1,0 +1,83 @@
+@use "../../../sass/abstracts/" as *;
+
+.section {
+  padding: 4rem 0;
+}
+
+.testimonial_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.business_logo {
+  max-width: 10rem;
+  max-height: 6.25rem;
+
+  & img {
+    object-fit: contain;
+  }
+
+  @include mq("small") {
+    max-width: 12.5rem;
+  }
+}
+
+.quote {
+  & svg {
+    color: $c-orange;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    @include mq("small") {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &:first-of-type {
+    padding-right: 0.25rem;
+    margin-top: -1rem;
+    display: flex;
+    align-items: flex-start;
+
+    @include mq("small") {
+      padding-right: 1rem;
+    }
+  }
+
+  &:last-of-type {
+    padding-left: 0.25rem;
+    margin-bottom: -1rem;
+    display: flex;
+    align-items: flex-end;
+
+    @include mq("small") {
+      padding-left: 1rem;
+    }
+  }
+}
+
+.testimonial {
+  text-align: center;
+  display: flex;
+  position: relative;
+
+  & * {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+}
+
+.author {
+  text-align: center;
+
+  & * {
+    font-weight: 700;
+  }
+}
+
+.author_business_position {
+  text-align: center;
+}

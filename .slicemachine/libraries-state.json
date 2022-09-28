@@ -13,7 +13,7 @@
           "description": "CallToAction",
           "variations": [
             {
-              "id": "narrow-centered",
+              "id": "narrowCentered",
               "name": "NarrowCentered",
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
@@ -228,8 +228,8 @@
           "extension": "js"
         },
         "screenshotPaths": {
-          "narrow-centered": {
-            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/CallToAction/narrow-centered/preview.png",
+          "narrowCentered": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/CallToAction/narrowCentered/preview.png",
             "width": 1600,
             "height": 710
           },
@@ -377,6 +377,65 @@
         },
         "screenshotPaths": {}
       },
+      "logos": {
+        "library": "slices",
+        "id": "logos",
+        "name": "Logos",
+        "description": "Logos",
+        "model": {
+          "id": "logos",
+          "type": "SharedSlice",
+          "name": "Logos",
+          "description": "Logos",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Logos",
+              "primary": {},
+              "items": {
+                "logo": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Logo",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "logo": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea"
+                }
+              }
+            ],
+            "primary": {},
+            "slice_type": "logos"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "nav_links": {
         "library": "slices",
         "id": "nav_links",
@@ -431,6 +490,115 @@
             ],
             "primary": {},
             "slice_type": "nav_links"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/NavLinks/default/preview.png",
+            "width": 420,
+            "height": 558
+          }
+        }
+      },
+      "testimonials": {
+        "library": "slices",
+        "id": "testimonials",
+        "name": "Testimonials",
+        "description": "Testimonials",
+        "model": {
+          "id": "testimonials",
+          "type": "SharedSlice",
+          "name": "Testimonials",
+          "description": "Testimonials",
+          "variations": [
+            {
+              "id": "slideshow",
+              "name": "Slideshow",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Testimonials",
+              "primary": {},
+              "items": {
+                "testimonial": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Testimonial",
+                    "select": "document",
+                    "customtypes": [
+                      "testimonial"
+                    ]
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "singleTestimonial",
+              "name": "Single Testimonial",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Testimonials",
+              "primary": {
+                "testimonial": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Testimonial",
+                    "select": "document",
+                    "customtypes": [
+                      "testimonial"
+                    ]
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "slideshow": {
+            "variation": "slideshow",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "testimonial": {
+                  "id": "mock_document_id",
+                  "link_type": "Document",
+                  "type": "testimonial",
+                  "tags": [],
+                  "lang": "en-us",
+                  "slug": null,
+                  "first_publication_date": "1970-01-01T00:00:01+0000",
+                  "last_publication_date": "1970-01-01T01:00:00+0000"
+                }
+              }
+            ],
+            "primary": {},
+            "slice_type": "testimonials"
+          },
+          "singleTestimonial": {
+            "variation": "singleTestimonial",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "testimonial": {
+                "id": "mock_document_id",
+                "link_type": "Document",
+                "type": "testimonial",
+                "tags": [],
+                "lang": "en-us",
+                "slug": null,
+                "first_publication_date": "1970-01-01T00:00:01+0000",
+                "last_publication_date": "1970-01-01T01:00:00+0000"
+              }
+            },
+            "slice_type": "testimonials"
           }
         },
         "meta": {

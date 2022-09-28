@@ -1,0 +1,45 @@
+{
+  "id": "testimonial",
+  "label": "Testimonial",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "business_logo": {
+        "type": "Image",
+        "config": {
+          "label": "Business Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "testimonial": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Testimonial",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em,hyperlink"
+        }
+      },
+      "author": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Author",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph"
+        }
+      },
+      "author_business_position": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Author Business Position",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph"
+        }
+      }
+    }
+  }
+}

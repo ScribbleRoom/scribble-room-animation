@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, Fragment } from "react"
 import Link from "next/link"
 import styles from "./styles.module.scss"
 import { PrismicNextImage } from "@prismicio/next"
@@ -27,12 +27,16 @@ export const Header = ({ slices, large_logo, small_logo, socials }) => {
       <div className={showLogo === false ? styles.hide_logo : null}>
         <div className={styles.large_logo}>
           <Link href="/">
-            <PrismicNextImage field={large_logo} />
+            <div>
+              <PrismicNextImage field={large_logo} />
+            </div>
           </Link>
         </div>
         <div className={styles.small_logo}>
           <Link href="/">
-            <PrismicNextImage field={small_logo} />
+            <div>
+              <PrismicNextImage field={small_logo} />
+            </div>
           </Link>
         </div>
       </div>

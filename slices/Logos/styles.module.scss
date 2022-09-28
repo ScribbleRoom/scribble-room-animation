@@ -1,0 +1,36 @@
+@use "../../sass/abstracts/" as *;
+
+.section {
+  padding: 4rem 0;
+}
+
+.list {
+  display: grid;
+  list-style: none;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  @include mq("small") {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include mq("large") {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  & li {
+    max-width: 12.5rem;
+    height: 5rem;
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    & img {
+      object-fit: contain;
+    }
+  }
+}

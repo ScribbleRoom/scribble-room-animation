@@ -1,0 +1,45 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "testimonial",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "business_logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869"
+    },
+    "testimonial": [
+      {
+        "type": "paragraph",
+        "text": "Consectetur nisi irure cillum aliqua quis consequat. Et irure enim sunt commodo et sit voluptate laborum.",
+        "spans": []
+      }
+    ],
+    "author": [
+      {
+        "type": "paragraph",
+        "text": "Sint qui quis quis consequat laboris eiusmod minim velit ullamco consectetur. Mollit ad dolor cupidatat aute in culpa velit.",
+        "spans": []
+      }
+    ],
+    "author_business_position": [
+      {
+        "type": "paragraph",
+        "text": "Reprehenderit deserunt eu irure.",
+        "spans": []
+      }
+    ]
+  }
+}

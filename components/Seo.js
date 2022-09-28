@@ -25,7 +25,7 @@ export const Seo = ({ metaTitle, metaDescription, metaImage, url }) => {
     twitter: {
       cardType: "summary_large_image",
     },
-    additionalLinkTags: [{ rel: "icon", href: "/favicon.ico" }],
+    additionalLinkTags: [{ rel: "icon", href: "/favicon.png" }],
   }
 
   return <NextSeo {...seoConfig} />

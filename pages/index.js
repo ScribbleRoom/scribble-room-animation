@@ -23,7 +23,14 @@ const Homepage = ({ data, url, lang, ...layout }) => {
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData })
 
-  const page = await client.getSingle("homepage")
+  const fetchLinks = [
+    "testimonial.business_logo",
+    "testimonial.testimonial",
+    "testimonial.author",
+    "testimonial.author_business_position",
+  ]
+
+  const page = await client.getSingle("homepage", { fetchLinks })
   const header = await client.getSingle("header")
   const footer = await client.getSingle("footer")
   const socials = await client.getSingle("socials")

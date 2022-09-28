@@ -2,16 +2,22 @@
 
 import CallToAction from './CallToAction';
 import Hero from './Hero';
+import Logos from './Logos';
 import NavLinks from './NavLinks';
+import Testimonials from './Testimonials';
 
 export {
 	CallToAction,
 	Hero,
+	Logos,
 	NavLinks,
+	Testimonials,
 };
 
 export const components = {
 	call_to_action: CallToAction,
 	hero: Hero,
+	logos: Logos,
 	nav_links: NavLinks,
+	testimonials: Testimonials,
 };

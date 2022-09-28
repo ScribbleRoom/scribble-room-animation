@@ -15,6 +15,12 @@
             },
             "call_to_action": {
               "type": "SharedSlice"
+            },
+            "testimonials": {
+              "type": "SharedSlice"
+            },
+            "logos": {
+              "type": "SharedSlice"
             }
           }
         }

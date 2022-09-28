@@ -3,7 +3,7 @@ import { WideWithGreyBackground } from "./WideWithGreyBackground"
 
 const CallToAction = ({ slice: { primary, items, variation }, index }) => {
   const componentMap = {
-    "narrow-centered": NarrowCentered,
+    narrowCentered: NarrowCentered,
     wideWithGreyBackground: WideWithGreyBackground,
   }
 

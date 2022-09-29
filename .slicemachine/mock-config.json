@@ -82,6 +82,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "Testimonial": {
+      "singleTestimonial": {
+        "primary": {}
+      }
     }
   }
 }

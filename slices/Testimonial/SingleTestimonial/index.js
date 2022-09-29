@@ -13,9 +13,11 @@ export const SingleTestimonial = (props) => {
       <blockquote
         className={`narrow-container ${styles.testimonial_container}`}
       >
-        <div className={styles.business_logo}>
-          <PrismicNextImage field={business_logo} />
-        </div>
+        {props.show_business_logo && (
+          <div className={styles.business_logo}>
+            <PrismicNextImage field={business_logo} />
+          </div>
+        )}
 
         <div className={styles.testimonial}>
           <span className={styles.quote}>

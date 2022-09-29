@@ -434,7 +434,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Logos/default/preview.png",
+            "width": 1285,
+            "height": 259
+          }
+        }
       },
       "nav_links": {
         "library": "slices",
@@ -507,35 +513,14 @@
       "testimonials": {
         "library": "slices",
         "id": "testimonials",
-        "name": "Testimonials",
+        "name": "Testimonial",
         "description": "Testimonials",
         "model": {
           "id": "testimonials",
           "type": "SharedSlice",
-          "name": "Testimonials",
+          "name": "Testimonial",
           "description": "Testimonials",
           "variations": [
-            {
-              "id": "slideshow",
-              "name": "Slideshow",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "Testimonials",
-              "primary": {},
-              "items": {
-                "testimonial": {
-                  "type": "Link",
-                  "config": {
-                    "label": "Testimonial",
-                    "select": "document",
-                    "customtypes": [
-                      "testimonial"
-                    ]
-                  }
-                }
-              },
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-            },
             {
               "id": "singleTestimonial",
               "name": "Single Testimonial",
@@ -543,6 +528,15 @@
               "version": "sktwi1xtmkfgx8626",
               "description": "Testimonials",
               "primary": {
+                "show_business_logo": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Show Business Logo",
+                    "placeholder_false": "No",
+                    "placeholder_true": "Yes",
+                    "default_value": false
+                  }
+                },
                 "testimonial": {
                   "type": "Link",
                   "config": {
@@ -560,26 +554,6 @@
           ]
         },
         "mocks": {
-          "slideshow": {
-            "variation": "slideshow",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {
-                "testimonial": {
-                  "id": "mock_document_id",
-                  "link_type": "Document",
-                  "type": "testimonial",
-                  "tags": [],
-                  "lang": "en-us",
-                  "slug": null,
-                  "first_publication_date": "1970-01-01T00:00:01+0000",
-                  "last_publication_date": "1970-01-01T01:00:00+0000"
-                }
-              }
-            ],
-            "primary": {},
-            "slice_type": "testimonials"
-          },
           "singleTestimonial": {
             "variation": "singleTestimonial",
             "version": "sktwi1xtmkfgx8626",
@@ -587,6 +561,7 @@
               {}
             ],
             "primary": {
+              "show_business_logo": true,
               "testimonial": {
                 "id": "mock_document_id",
                 "link_type": "Document",
@@ -605,7 +580,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "singleTestimonial": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Testimonial/singleTestimonial/preview.png",
+            "width": 921,
+            "height": 319
+          }
+        }
       }
     }
   }

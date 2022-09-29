@@ -14,17 +14,15 @@ const Logos = ({ slice: { items } }) => {
 
     setTimeout(() => {
       if (items.length > sliceEnd) {
-        console.log("here 1")
         setSliceStart(sliceStart + 6)
         setSliceEnd(sliceEnd + 6)
         setLogos(items.slice(sliceStart, sliceEnd))
       } else {
-        console.log("here 2")
         setSliceStart(0)
         setSliceEnd(6)
         setLogos(items.slice(sliceStart, sliceEnd))
       }
-    }, 8000)
+    }, 6000)
   }, [sliceStart, sliceEnd, items])
 
   const listVariants = {
@@ -44,12 +42,15 @@ const Logos = ({ slice: { items } }) => {
   }
 
   const itemVariants = {
-    initial: { opacity: 0, y: 25 },
+    initial: { opacity: 0, y: 15 },
     animate: (i) => ({
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.1,
+        delay: i * 0.15,
+        type: "spring",
+        stiffness: 250,
+        opacity: { type: "tween" },
       },
     }),
   }

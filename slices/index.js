@@ -4,14 +4,14 @@ import CallToAction from './CallToAction';
 import Hero from './Hero';
 import Logos from './Logos';
 import NavLinks from './NavLinks';
-import Testimonials from './Testimonials';
+import Testimonial from './Testimonial';
 
 export {
 	CallToAction,
 	Hero,
 	Logos,
 	NavLinks,
-	Testimonials,
+	Testimonial,
 };
 
 export const components = {
@@ -19,5 +19,5 @@ export const components = {
 	hero: Hero,
 	logos: Logos,
 	nav_links: NavLinks,
-	testimonials: Testimonials,
+	testimonials: Testimonial,
 };

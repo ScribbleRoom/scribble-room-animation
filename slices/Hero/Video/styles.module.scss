@@ -3,7 +3,6 @@
 .section {
   overflow: hidden;
   position: relative;
-  margin-top: -8rem;
 }
 
 .video_container {
@@ -18,8 +17,6 @@
     width: 100vw;
     object-fit: cover;
     max-height: max-content;
-    user-select: none;
-    pointer-events: none;
   }
 }
 

@@ -11,6 +11,8 @@ export function linkResolver(doc) {
       return "/"
     case "page":
       return `/${doc.uid}`
+    case "project":
+      return `/projects/${doc.uid}`
     case "contact":
       return "/contact"
     default:

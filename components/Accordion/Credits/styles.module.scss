@@ -1,0 +1,60 @@
+@use "../../../sass/abstracts/" as *;
+
+.container {
+  background-color: $c-yellow;
+  border-radius: 5px;
+  display: block;
+  max-width: 50rem;
+}
+
+.accordion_button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  transition: all 200ms;
+
+  &:hover {
+    color: $c-ivory;
+  }
+}
+
+.button_icon_span {
+  display: flex;
+}
+
+.accordion_title {
+  font-weight: 500;
+  font-size: 1.375rem;
+}
+
+.accordion_button_icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.disclosure_panel {
+  background-color: $c-yellow;
+  border-radius: 5px;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+    row-gap: 2rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+  }
+}
+
+.group_header {
+  & > * {
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+  }
+}

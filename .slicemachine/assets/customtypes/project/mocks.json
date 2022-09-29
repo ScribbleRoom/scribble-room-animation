@@ -1,0 +1,110 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "project",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "project_title": [
+      {
+        "type": "heading1",
+        "text": "Potatoes",
+        "spans": []
+      }
+    ],
+    "project_description": [
+      {
+        "type": "paragraph",
+        "text": "Pariatur ea adipisicing labore ullamco enim occaecat excepteur nostrud commodo fugiat cupidatat consequat labore occaecat. Irure quis enim officia anim fugiat pariatur ullamco in veniam.",
+        "spans": []
+      }
+    ],
+    "project_image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
+    },
+    "vimeo_video_id": "in",
+    "director_name": [
+      {
+        "type": "paragraph",
+        "text": "Aute mollit non quis fugiat duis id commodo do nisi non consectetur deserunt. Incididunt voluptate mollit sunt ex laborum aute Lorem sunt nisi adipisicing magna aliqua eiusmod pariatur anim. Voluptate cillum consectetur aliquip consectetur aliqua eiusmod sit id.",
+        "spans": []
+      }
+    ],
+    "client_name": [
+      {
+        "type": "paragraph",
+        "text": "Aliqua consectetur officia deserunt nulla veniam est exercitation. Dolor ipsum mollit eiusmod ad ullamco mollit eu ad pariatur proident consequat nulla eiusmod esse minim. Amet dolore veniam enim minim commodo aliquip.",
+        "spans": []
+      }
+    ],
+    "services": [
+      {
+        "type": "paragraph",
+        "text": "Cupidatat do anim quis officia voluptate magna et pariatur nulla incididunt proident.",
+        "spans": []
+      }
+    ],
+    "deliverables": [
+      {
+        "type": "paragraph",
+        "text": "Culpa velit enim enim aliquip fugiat cillum duis velit eiusmod. Ipsum irure cillum ut aliquip id ex laboris id aliquip occaecat laborum nisi cupidatat. In quis duis cupidatat consequat sint velit dolore ut magna nostrud cupidatat aliqua.",
+        "spans": []
+      }
+    ],
+    "related_projects": [
+      {
+        "project": {
+          "id": "mock_document_id",
+          "link_type": "Document",
+          "type": "project",
+          "tags": [],
+          "lang": "en-us",
+          "slug": null,
+          "first_publication_date": "1970-01-01T00:00:01+0000",
+          "last_publication_date": "1970-01-01T01:00:00+0000"
+        }
+      }
+    ],
+    "metaTitle": "wet",
+    "metaDescription": "related",
+    "metaImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
+    },
+    "credits_group": [
+      {
+        "group_header_name": [
+          {
+            "type": "paragraph",
+            "text": "Sint qui nulla aute proident enim est quis Lorem ex laborum culpa. Laboris laboris amet non. Incididunt duis dolor duis reprehenderit culpa ex voluptate quis ullamco in ea aliqua culpa.",
+            "spans": []
+          }
+        ],
+        "group_names": [
+          {
+            "type": "paragraph",
+            "text": "Reprehenderit ipsum irure ex laborum cupidatat mollit sunt nostrud nulla aliquip consequat in fugiat quis.",
+            "spans": []
+          }
+        ]
+      }
+    ]
+  }
+}

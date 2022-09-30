@@ -1,8 +1,13 @@
 @use "../../../sass/abstracts/" as *;
 
 .section {
-  padding: 4rem 0;
   background-color: $c-charcoal-5;
+
+  padding: 3rem 0;
+
+  @include mq("small") {
+    padding: 4rem 0;
+  }
 }
 
 .title {

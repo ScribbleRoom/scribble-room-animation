@@ -7,29 +7,27 @@ const Projects = ({
     primary: { link, link_text },
     items,
   },
-}) => {
-  console.log(items)
-
-  return (
-    <section className={`${styles.section} container`}>
-      <ul className={styles.list}>
-        {items.map(({ project }, index) => (
-          <li key={index}>
-            <ProjectCard
-              link={project}
-              title={project?.data?.project_title}
-              image={project?.data?.project_image}
-            />
-          </li>
-        ))}
-      </ul>
+}) => (
+  <section className={`${styles.section} container`}>
+    <ul className={styles.list}>
+      {items.map(({ project }, index) => (
+        <li key={index}>
+          <ProjectCard
+            link={project}
+            title={project?.data?.project_title}
+            image={project?.data?.project_image}
+          />
+        </li>
+      ))}
+    </ul>
+    {link && (
       <div className={styles.button}>
         <PrismicLink document={link} className="button primary">
           {link_text}
         </PrismicLink>
       </div>
-    </section>
-  )
-}
+    )}
+  </section>
+)
 
 export default Projects

@@ -375,7 +375,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "text": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Hero/text/preview.png",
+            "width": 1140,
+            "height": 332
+          }
+        }
       },
       "logos": {
         "library": "slices",
@@ -592,7 +598,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Projects/default/preview.png",
+            "width": 1140,
+            "height": 1308
+          }
+        }
       },
       "testimonials": {
         "library": "slices",

@@ -1,0 +1,19 @@
+@use "../../../sass/abstracts/" as *;
+
+.section {
+  padding: 3rem 1rem;
+  text-align: center;
+
+  @include mq("small") {
+    padding: 4rem 1rem;
+  }
+}
+
+.title {
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  max-width: 55rem;
+  margin: auto;
+}

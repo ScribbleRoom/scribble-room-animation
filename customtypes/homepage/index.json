@@ -21,6 +21,9 @@
             },
             "logos": {
               "type": "SharedSlice"
+            },
+            "projects": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -20,6 +20,7 @@ const Project = ({ data, url, lang, ...layout }) => {
 
   return (
     <Layout seo={seo} {...layout}>
+      <section>{/* TODO: Hero Video */}</section>
       <section className={`container ${styles.section}`}>
         <div>
           <PrismicRichText field={data?.project_title} />
@@ -46,6 +47,8 @@ const Project = ({ data, url, lang, ...layout }) => {
         </div>
       </section>
       <SliceZone slices={data?.slices} components={components} />
+      <section>{/* TODO: Services & Deliverables */}</section>
+      <section>{/* TODO: Related Projects */}</section>
     </Layout>
   )
 }

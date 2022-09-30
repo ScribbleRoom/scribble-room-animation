@@ -1,0 +1,29 @@
+@use "../../sass/abstracts" as *;
+
+.section {
+  padding: 4rem 1rem;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+
+  @include mq("small") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq("medium") {
+    gap: 2rem;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+
+  @include mq("medium") {
+    margin-top: 2rem;
+  }
+}

@@ -140,6 +140,12 @@
         "primary": {}
       }
     },
-    "CreditsSection": {}
+    "CreditsSection": {},
+    "Projects": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    }
   }
 }

@@ -28,6 +28,8 @@ export async function getStaticProps({ previewData }) {
     "testimonial.testimonial",
     "testimonial.author",
     "testimonial.author_business_position",
+    "project.project_title",
+    "project.project_image",
   ]
 
   const page = await client.getSingle("homepage", { fetchLinks })

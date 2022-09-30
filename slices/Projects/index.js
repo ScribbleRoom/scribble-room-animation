@@ -16,6 +16,7 @@ const Projects = ({
             link={project}
             title={project?.data?.project_title}
             image={project?.data?.project_image}
+            index={index}
           />
         </li>
       ))}

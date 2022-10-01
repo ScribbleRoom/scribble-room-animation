@@ -53,7 +53,7 @@ export const CreditsAccordion = ({ credits }) => {
                 static
                 className={styles.disclosure_panel}
               >
-                <m.ul {...list}>
+                <m.ul {...list} layout>
                   {credits.map(({ group_header_name, group_names }, index) => (
                     <li key={index} className={styles.item}>
                       <div className={styles.group_header}>

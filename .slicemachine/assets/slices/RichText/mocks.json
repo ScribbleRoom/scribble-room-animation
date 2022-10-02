@@ -1,0 +1,36 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Aute exercitation culpa et id. Anim amet consequat velit dolore.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "rich_text"
+  },
+  {
+    "variation": "narrowContent",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Qui tempor ipsum laboris qui quis sint adipisicing nisi ea tempor non adipisicing. Ad voluptate sit velit amet elit culpa eu occaecat aliqua enim velit.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "rich_text"
+  }
+]

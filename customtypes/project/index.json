@@ -135,6 +135,25 @@
         }
       }
     },
+    "Project Content Slices": {
+      "slices3": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "testimonials": {
+              "type": "SharedSlice"
+            },
+            "rich_text": {
+              "type": "SharedSlice"
+            },
+            "images": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
     "SEO": {
       "metaTitle": {
         "type": "Text",
@@ -156,19 +175,6 @@
           "label": "Meta Image",
           "constraint": {},
           "thumbnails": []
-        }
-      }
-    },
-    "Project Content Slices": {
-      "slices3": {
-        "type": "Slices",
-        "fieldset": "Slice Zone",
-        "config": {
-          "choices": {
-            "testimonials": {
-              "type": "SharedSlice"
-            }
-          }
         }
       }
     }

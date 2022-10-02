@@ -148,6 +148,26 @@
         "primary": {},
         "items": {}
       }
+    },
+    "RichText": {
+      "default": {
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Images": {
+      "default": {
+        "primary": {}
+      },
+      "2Images": {
+        "primary": {}
+      }
     }
   }
 }

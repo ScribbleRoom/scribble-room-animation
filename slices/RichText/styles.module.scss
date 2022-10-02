@@ -1,0 +1,9 @@
+@use "../../sass/abstracts/" as *;
+
+.section {
+  padding: 3rem 1rem;
+
+  @include mq("small") {
+    padding: 4rem 1rem;
+  }
+}

@@ -381,6 +381,192 @@
           }
         }
       },
+      "images": {
+        "library": "slices",
+        "id": "images",
+        "name": "Images",
+        "description": "Images",
+        "model": {
+          "id": "images",
+          "type": "SharedSlice",
+          "name": "Images",
+          "description": "Images",
+          "variations": [
+            {
+              "id": "1FullWidthImage",
+              "name": "1 Full Width Image",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Images",
+              "primary": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "2Images",
+              "name": "2 Images",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Images",
+              "primary": {
+                "image_1": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image 1",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "image_2": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image 2",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "3Images",
+              "name": "3 Images",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Images",
+              "primary": {
+                "image_1": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image 1",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "image_2": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image 2",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "image_3": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image 3",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
+              }
+            },
+            "slice_type": "images"
+          },
+          "2Images": {
+            "variation": "2Images",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "image_1": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72"
+              },
+              "image_2": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869"
+              }
+            },
+            "slice_type": "images"
+          },
+          "3Images": {
+            "variation": "3Images",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "image_1": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f"
+              },
+              "image_2": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+              },
+              "image_3": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
+              }
+            },
+            "slice_type": "images"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "logos": {
         "library": "slices",
         "id": "logos",
@@ -601,6 +787,112 @@
             "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Projects/default/preview.png",
             "width": 1140,
             "height": 1308
+          }
+        }
+      },
+      "rich_text": {
+        "library": "slices",
+        "id": "rich_text",
+        "name": "RichText",
+        "description": "RichText",
+        "model": {
+          "id": "rich_text",
+          "type": "SharedSlice",
+          "name": "RichText",
+          "description": "RichText",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "RichText",
+              "primary": {
+                "content": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Content",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,strong,list-item,o-list-item,em,hyperlink,heading3,heading4,heading5"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "narrowContent",
+              "name": "Narrow Content",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "RichText",
+              "primary": {
+                "content": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Content",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,strong,list-item,o-list-item,em,hyperlink,heading3,heading4,heading5"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "text": "Aute exercitation culpa et id. Anim amet consequat velit dolore.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "rich_text"
+          },
+          "narrowContent": {
+            "variation": "narrowContent",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "text": "Qui tempor ipsum laboris qui quis sint adipisicing nisi ea tempor non adipisicing. Ad voluptate sit velit amet elit culpa eu occaecat aliqua enim velit.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "rich_text"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/RichText/default/preview.png",
+            "width": 1140,
+            "height": 176
+          },
+          "narrowContent": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/RichText/narrowContent/preview.png",
+            "width": 800,
+            "height": 200
           }
         }
       },

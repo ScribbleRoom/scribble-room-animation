@@ -2,25 +2,31 @@
 
 import CallToAction from './CallToAction';
 import Hero from './Hero';
+import Images from './Images';
 import Logos from './Logos';
 import NavLinks from './NavLinks';
 import Projects from './Projects';
+import RichText from './RichText';
 import Testimonial from './Testimonial';
 
 export {
 	CallToAction,
 	Hero,
+	Images,
 	Logos,
 	NavLinks,
 	Projects,
+	RichText,
 	Testimonial,
 };
 
 export const components = {
 	call_to_action: CallToAction,
 	hero: Hero,
+	images: Images,
 	logos: Logos,
 	nav_links: NavLinks,
 	projects: Projects,
+	rich_text: RichText,
 	testimonials: Testimonial,
 };

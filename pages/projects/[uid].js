@@ -5,6 +5,8 @@ import { Layout } from "../../components/Layout"
 import { components } from "../../slices"
 import styles from "../../sass/pages/project-page.module.scss"
 import { CreditsAccordion } from "../../components/Accordion/Credits"
+import { Video } from "../../slices/Hero/Video"
+import { PrismicNextImage } from "@prismicio/next"
 
 const Project = ({ data, url, lang, ...layout }) => {
   const seo = {
@@ -16,11 +18,15 @@ const Project = ({ data, url, lang, ...layout }) => {
     lang,
   }
 
-  console.log(data?.credits_group)
-
   return (
     <Layout seo={seo} {...layout}>
-      <section>{/* TODO: Hero Video */}</section>
+      {data?.vimeo_video_id ? (
+        <Video vimeo_video_id={data?.vimeo_video_id} />
+      ) : (
+        <div className={styles.project_image}>
+          <PrismicNextImage field={data?.project_image} />
+        </div>
+      )}
       <section className={`container ${styles.section}`}>
         <div>
           <PrismicRichText field={data?.project_title} />

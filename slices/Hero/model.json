@@ -40,6 +40,13 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "Hero",
       "primary": {
+        "vimeo_video_id": {
+          "type": "Text",
+          "config": {
+            "label": "Vimeo Video ID",
+            "placeholder": ""
+          }
+        },
         "show_logo": {
           "type": "Boolean",
           "config": {
@@ -55,14 +62,6 @@
             "label": "Logo",
             "constraint": {},
             "thumbnails": []
-          }
-        },
-        "video": {
-          "type": "Link",
-          "config": {
-            "label": "Video",
-            "placeholder": "",
-            "select": "media"
           }
         }
       },

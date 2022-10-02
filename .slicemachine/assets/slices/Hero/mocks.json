@@ -9,14 +9,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Winter",
+          "text": "Stick",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Eu incididunt incididunt magna ut laboris in aliqua cillum id eu id ut culpa cillum. Incididunt laboris excepteur tempor mollit elit. Velit irure amet sit culpa velit aliqua.",
+          "text": "Laboris nostrud ut velit pariatur eiusmod minim cillum adipisicing ipsum excepteur enim nostrud voluptate id. Eu cupidatat dolore qui amet laborum ut et est anim deserunt. Voluptate aliquip enim Lorem.",
           "spans": []
         }
       ]
@@ -30,6 +30,7 @@
       {}
     ],
     "primary": {
+      "vimeo_video_id": "football",
       "show_logo": false,
       "logo": {
         "dimensions": {
@@ -38,14 +39,7 @@
         },
         "alt": null,
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a"
-      },
-      "video": {
-        "link_type": "Media",
-        "name": "mock",
-        "kind": "image",
-        "url": "https://source.unsplash.com/random",
-        "size": "10kB"
+        "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0"
       }
     },
     "slice_type": "hero"

@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   max-width: 71.25rem;
   padding: 1rem;
   margin: auto;
@@ -60,8 +60,12 @@
   position: relative;
   z-index: 150;
   width: max-content;
-  height: 2rem;
   padding: 0;
+  height: 1.5rem;
+
+  @include mq("small") {
+    height: 2rem;
+  }
 
   & .burger_icon:first-of-type {
     transform: translateY(-0.2rem);
@@ -74,18 +78,37 @@
   }
 
   &.is_open {
+    height: 2.25rem;
+
     & .burger_icon:first-of-type {
-      transform: rotate(45deg) translate(0.15rem, 0.2rem);
+      transform: rotate(45deg) translate(0.25rem, 0.21rem);
     }
 
     & .burger_icon:last-of-type {
-      transform: rotate(-45deg) translateX(-0.075rem);
+      transform: rotate(-45deg) translateX(-0.1rem);
+    }
+
+    @include mq("small") {
+      height: 3.25rem;
+
+      & .burger_icon:first-of-type {
+        transform: rotate(45deg) translate(0.28rem, 0.25rem);
+      }
+
+      & .burger_icon:last-of-type {
+        transform: rotate(-45deg) translateX(-0.1rem);
+      }
     }
   }
 }
 
 .burger_icon {
   width: 2rem;
-  height: 0.1875rem;
+  height: 0.25rem;
   background-color: $c-charcoal;
+
+  @include mq("small") {
+    width: 2.75rem;
+    height: 0.3125rem;
+  }
 }

@@ -38,3 +38,19 @@
 .credits_accordion_container {
   margin: 1rem 0 2rem 0;
 }
+
+.services_and_deliverables {
+  padding: 3rem 1rem;
+
+  & h2 {
+    line-height: 1.5;
+  }
+
+  & div:first-of-type {
+    margin-bottom: 2rem;
+  }
+
+  @include mq("small") {
+    padding: 4rem 1rem;
+  }
+}

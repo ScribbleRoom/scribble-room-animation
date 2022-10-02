@@ -15,8 +15,6 @@ const Projects = ({ data, url, lang, projects, ...layout }) => {
     lang,
   }
 
-  console.log(projects)
-
   return (
     <Layout seo={seo} {...layout}>
       <SliceZone slices={data?.slices} components={components} />
@@ -58,8 +56,6 @@ export async function getStaticProps({ previewData }) {
   const projects = await client.getAllByType("project", {
     fetchLinks: ["project.project_title", "project.project_image"],
   })
-
-  console.log(projects)
 
   return {
     props: { header, footer, socials, projects, ...page },

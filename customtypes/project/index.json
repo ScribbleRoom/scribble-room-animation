@@ -103,11 +103,7 @@
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
-          "choices": {
-            "testimonials": {
-              "type": "SharedSlice"
-            }
-          }
+          "choices": {}
         }
       }
     },
@@ -160,6 +156,19 @@
           "label": "Meta Image",
           "constraint": {},
           "thumbnails": []
+        }
+      }
+    },
+    "Project Content Slices": {
+      "slices3": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "testimonials": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     }

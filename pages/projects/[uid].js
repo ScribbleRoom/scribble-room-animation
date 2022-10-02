@@ -52,8 +52,27 @@ const Project = ({ data, url, lang, ...layout }) => {
           <PrismicRichText field={data?.project_description} />
         </div>
       </section>
-      <SliceZone slices={data?.slices} components={components} />
-      <section>{/* TODO: Services & Deliverables */}</section>
+      <SliceZone slices={data?.slices3} components={components} />
+      {(data?.services || data?.deliverables) && (
+        <section className={`container ${styles.services_and_deliverables}`}>
+          {data?.services && (
+            <div>
+              <h2>Services</h2>
+              <div>
+                <PrismicRichText field={data?.services} />
+              </div>
+            </div>
+          )}
+          {data?.deliverables && (
+            <div>
+              <h2>Deliverables</h2>
+              <div>
+                <PrismicRichText field={data?.deliverables} />
+              </div>
+            </div>
+          )}
+        </section>
+      )}
       <section>{/* TODO: Related Projects */}</section>
     </Layout>
   )
@@ -72,8 +91,17 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData })
 
+  const fetchLinks = [
+    "testimonial.business_logo",
+    "testimonial.testimonial",
+    "testimonial.author",
+    "testimonial.author_business_position",
+    "project.project_title",
+    "project.project_image",
+  ]
+
   const page = await client.getByUID("project", params.uid, {
-    fetchLinks: ["project.project_title", "project.project_image"],
+    fetchLinks,
   })
   const header = await client.getSingle("header")
   const footer = await client.getSingle("footer")

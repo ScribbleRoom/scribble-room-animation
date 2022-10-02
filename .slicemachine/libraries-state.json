@@ -565,7 +565,23 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "1FullWidthImage": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Images/1FullWidthImage/preview.png",
+            "width": 1140,
+            "height": 767
+          },
+          "2Images": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Images/2Images/preview.png",
+            "width": 1140,
+            "height": 674
+          },
+          "3Images": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Images/3Images/preview.png",
+            "width": 1140,
+            "height": 487
+          }
+        }
       },
       "logos": {
         "library": "slices",

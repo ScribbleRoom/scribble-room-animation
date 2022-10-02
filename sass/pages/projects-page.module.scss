@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+.section {
+  padding: 3rem 1rem;
+
+  @include mq("small") {
+    padding: 4rem 1rem;
+  }
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+
+  @include mq("small") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq("medium") {
+    gap: 2rem;
+  }
+}

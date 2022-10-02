@@ -98,6 +98,17 @@
             }
           }
         }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "testimonials": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     },
     "Full Credits": {

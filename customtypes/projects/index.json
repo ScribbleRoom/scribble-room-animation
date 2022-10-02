@@ -13,9 +13,6 @@
             "call_to_action": {
               "type": "SharedSlice"
             },
-            "projects": {
-              "type": "SharedSlice"
-            },
             "testimonials": {
               "type": "SharedSlice"
             },
@@ -23,6 +20,25 @@
               "type": "SharedSlice"
             },
             "hero": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Slices After Projects List": {
+      "slices2": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "testimonials": {
+              "type": "SharedSlice"
+            },
+            "logos": {
+              "type": "SharedSlice"
+            },
+            "call_to_action": {
               "type": "SharedSlice"
             }
           }

@@ -167,6 +167,16 @@
       },
       "2Images": {
         "primary": {}
+      },
+      "leftAlignedImageWithText": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
     }
   }

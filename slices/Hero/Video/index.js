@@ -6,13 +6,16 @@ import { PrismicNextImage } from "@prismicio/next"
 export const Video = ({ show_logo, vimeo_video_id, logo, index }) => {
   useEffect(() => {
     if (window) {
-      new Player(`vimeo-player-${index}`, {
+      const player = new Player(`vimeo-player-${index}`, {
         id: vimeo_video_id,
         background: true,
         responsive: true,
         color: "ef8000",
         keyboard: false,
+        dnt: true,
       })
+
+      player.getVideoHeight().then((height) => console.log(height))
     }
   })
 

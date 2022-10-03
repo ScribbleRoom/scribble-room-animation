@@ -7,7 +7,7 @@ import { m } from "framer-motion"
 export const ThreeImages = ({ image_1, image_2, image_3 }) => {
   const ref = useRef(null)
   const isInView = useInView(ref, {
-    amount: 0.5,
+    amount: 0.3,
     once: true,
   })
 

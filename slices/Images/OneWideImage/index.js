@@ -5,7 +5,7 @@ import { m, useInView } from "framer-motion"
 
 export const OneWideImage = ({ image }) => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { amount: 0.5, once: true })
+  const isInView = useInView(ref, { amount: 0.3, once: true })
 
   const imageVariants = {
     initial: { opacity: 0, y: 50 },

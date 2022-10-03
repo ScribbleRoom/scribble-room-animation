@@ -34,7 +34,16 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData })
 
-  const page = await client.getByUID("page", params.uid)
+  const fetchLinks = [
+    "testimonial.business_logo",
+    "testimonial.testimonial",
+    "testimonial.author",
+    "testimonial.author_business_position",
+    "project.project_title",
+    "project.project_image",
+  ]
+
+  const page = await client.getByUID("page", params.uid, { fetchLinks })
   const header = await client.getSingle("header")
   const footer = await client.getSingle("footer")
   const socials = await client.getSingle("socials")

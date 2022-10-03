@@ -3,6 +3,12 @@
 .section {
   overflow: hidden;
   position: relative;
+
+  margin-bottom: 2rem;
+
+  @include mq("small") {
+    margin-bottom: 3rem;
+  }
 }
 
 .video_container {

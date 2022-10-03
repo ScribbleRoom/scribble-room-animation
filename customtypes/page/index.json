@@ -40,6 +40,12 @@
             },
             "logos": {
               "type": "SharedSlice"
+            },
+            "rich_text": {
+              "type": "SharedSlice"
+            },
+            "images": {
+              "type": "SharedSlice"
             }
           }
         }

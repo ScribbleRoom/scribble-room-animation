@@ -40,7 +40,7 @@
 }
 
 .services_and_deliverables {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 
   & h2 {
     line-height: 1.5;
@@ -51,6 +51,6 @@
   }
 
   @include mq("small") {
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
   }
 }

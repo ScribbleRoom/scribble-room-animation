@@ -14,8 +14,6 @@ export const Video = ({ show_logo, vimeo_video_id, logo, index }) => {
         keyboard: false,
         dnt: true,
       })
-
-      player.getVideoHeight().then((height) => console.log(height))
     }
   })
 

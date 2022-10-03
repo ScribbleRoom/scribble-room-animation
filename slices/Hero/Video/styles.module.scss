@@ -17,7 +17,7 @@
 
 .video {
   @include mq("large") {
-    max-height: 75vh;
+    max-height: 65vh;
   }
 }
 

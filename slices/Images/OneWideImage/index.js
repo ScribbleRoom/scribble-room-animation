@@ -1,31 +1,8 @@
-import { useRef } from "react"
-import { PrismicNextImage } from "@prismicio/next"
 import styles from "./styles.module.scss"
-import { m, useInView } from "framer-motion"
+import { MotionImage } from "../MotionImage"
 
-export const OneWideImage = ({ image }) => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { amount: 0.3, once: true })
-
-  const imageVariants = {
-    initial: { opacity: 0, y: 50 },
-    animate: {
-      opacity: 1,
-      y: 0,
-    },
-  }
-
-  return (
-    <section className={`container ${styles.section}`}>
-      <m.div
-        className={styles.image}
-        ref={ref}
-        initial="initial"
-        animate={isInView && "animate"}
-        variants={imageVariants}
-      >
-        <PrismicNextImage as={m.img} field={image} />
-      </m.div>
-    </section>
-  )
-}
+export const OneWideImage = ({ image }) => (
+  <section className={`container ${styles.section}`}>
+    <MotionImage index={0} image={image} wideImage />
+  </section>
+)

@@ -7,6 +7,7 @@ import Logos from './Logos';
 import NavLinks from './NavLinks';
 import Projects from './Projects';
 import RichText from './RichText';
+import TeamMembers from './TeamMembers';
 import Testimonial from './Testimonial';
 
 export {
@@ -17,6 +18,7 @@ export {
 	NavLinks,
 	Projects,
 	RichText,
+	TeamMembers,
 	Testimonial,
 };
 
@@ -28,5 +30,6 @@ export const components = {
 	nav_links: NavLinks,
 	projects: Projects,
 	rich_text: RichText,
+	team_members: TeamMembers,
 	testimonials: Testimonial,
 };

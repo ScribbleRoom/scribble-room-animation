@@ -7,6 +7,7 @@ import styles from "../../sass/pages/project-page.module.scss"
 import { CreditsAccordion } from "../../components/Accordion/Credits"
 import { Video } from "../../slices/Hero/Video"
 import { PrismicNextImage } from "@prismicio/next"
+import { ProjectCard } from "../../components/Card/Project"
 
 const Project = ({ data, url, lang, ...layout }) => {
   const seo = {
@@ -73,7 +74,21 @@ const Project = ({ data, url, lang, ...layout }) => {
           )}
         </section>
       )}
-      <section>{/* TODO: Related Projects */}</section>
+      <section className={`container ${styles.related_projects_container}`}>
+        <h2>Related Projects</h2>
+        <ul className={styles.related_projects}>
+          {data?.related_projects.map(({ project }, index) => (
+            <li key={index}>
+              <ProjectCard
+                link={project}
+                title={project?.data?.project_title}
+                image={project?.data?.project_image}
+                index={index}
+              />
+            </li>
+          ))}
+        </ul>
+      </section>
     </Layout>
   )
 }

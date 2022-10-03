@@ -77,7 +77,27 @@
       }
     },
     "page": {},
-    "projects": {}
+    "projects": {},
+    "team_member": {
+      "name": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "position": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "short_description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   },
   "slices": {
     "Hero": {
@@ -177,6 +197,19 @@
             }
           }
         }
+      }
+    },
+    "TeamMembers": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
       }
     }
   }

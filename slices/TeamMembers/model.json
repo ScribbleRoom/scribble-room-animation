@@ -1,0 +1,39 @@
+{
+  "id": "team_members",
+  "type": "SharedSlice",
+  "name": "TeamMembers",
+  "description": "TeamMembers",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TeamMembers",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "team_member": {
+          "type": "Link",
+          "config": {
+            "label": "Team Member",
+            "select": "document",
+            "customtypes": [
+              "team_member"
+            ]
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

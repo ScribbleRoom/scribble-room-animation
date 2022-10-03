@@ -5,15 +5,6 @@
   "status": true,
   "json": {
     "Main": {
-      "title": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Title",
-          "placeholder": "",
-          "allowTargetBlank": false,
-          "single": "heading1"
-        }
-      },
       "uid": {
         "type": "UID",
         "config": {
@@ -45,6 +36,9 @@
               "type": "SharedSlice"
             },
             "images": {
+              "type": "SharedSlice"
+            },
+            "team_members": {
               "type": "SharedSlice"
             }
           }

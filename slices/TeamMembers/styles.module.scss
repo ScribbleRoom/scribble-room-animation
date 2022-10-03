@@ -1,4 +1,4 @@
-@use "../../sass/abstracts" as *;
+@use "../../sass/abstracts/" as *;
 
 .section {
   padding: 2rem 1rem;
@@ -8,26 +8,23 @@
   }
 }
 
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .list {
   list-style: none;
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 
   @include mq("small") {
+    gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @include mq("medium") {
     gap: 2rem;
-  }
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-
-  @include mq("medium") {
-    margin-top: 2rem;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

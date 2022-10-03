@@ -688,6 +688,16 @@
             "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Images/3Images/preview.png",
             "width": 1140,
             "height": 487
+          },
+          "leftAlignedImageWithText": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Images/leftAlignedImageWithText/preview.png",
+            "width": 1140,
+            "height": 726
+          },
+          "rightAlignedImageWithText": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Images/rightAlignedImageWithText/preview.png",
+            "width": 1140,
+            "height": 726
           }
         }
       },
@@ -1019,6 +1029,86 @@
             "height": 200
           }
         }
+      },
+      "team_members": {
+        "library": "slices",
+        "id": "team_members",
+        "name": "TeamMembers",
+        "description": "TeamMembers",
+        "model": {
+          "id": "team_members",
+          "type": "SharedSlice",
+          "name": "TeamMembers",
+          "description": "TeamMembers",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TeamMembers",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                }
+              },
+              "items": {
+                "team_member": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Team Member",
+                    "select": "document",
+                    "customtypes": [
+                      "team_member"
+                    ]
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "team_member": {
+                  "id": "mock_document_id",
+                  "link_type": "Document",
+                  "type": "team_member",
+                  "tags": [],
+                  "lang": "en-us",
+                  "slug": null,
+                  "first_publication_date": "1970-01-01T00:00:01+0000",
+                  "last_publication_date": "1970-01-01T01:00:00+0000"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Location",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "team_members"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
       },
       "testimonials": {
         "library": "slices",

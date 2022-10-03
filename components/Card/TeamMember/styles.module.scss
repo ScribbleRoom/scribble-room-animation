@@ -1,0 +1,41 @@
+@use "../../../sass/abstracts/" as *;
+
+.image {
+  & img {
+    border-radius: 5px;
+  }
+}
+
+.name {
+  & * {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0.5rem 0 0.2rem 0;
+  }
+}
+
+.position {
+  color: $c-orange;
+}
+
+.description {
+  margin-top: 0.75rem;
+}
+
+.social_icons {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  & svg {
+    color: $c-yellow;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: 200ms all;
+
+    &:hover {
+      color: $c-orange;
+    }
+  }
+}

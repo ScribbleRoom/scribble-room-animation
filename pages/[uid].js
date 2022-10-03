@@ -41,6 +41,12 @@ export async function getStaticProps({ params, previewData }) {
     "testimonial.author_business_position",
     "project.project_title",
     "project.project_image",
+    "team_member.image",
+    "team_member.name",
+    "team_member.position",
+    "team_member.short_description",
+    "team_member.instagram_link",
+    "team_member.linkedin_link",
   ]
 
   const page = await client.getByUID("page", params.uid, { fetchLinks })

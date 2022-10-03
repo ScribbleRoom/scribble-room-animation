@@ -24,6 +24,15 @@
             },
             "projects": {
               "type": "SharedSlice"
+            },
+            "team_members": {
+              "type": "SharedSlice"
+            },
+            "images": {
+              "type": "SharedSlice"
+            },
+            "rich_text": {
+              "type": "SharedSlice"
             }
           }
         }

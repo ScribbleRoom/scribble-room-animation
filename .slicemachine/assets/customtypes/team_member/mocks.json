@@ -1,0 +1,53 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "team_member",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f"
+    },
+    "name": [
+      {
+        "type": "paragraph",
+        "text": "Amet nulla ut mollit aliquip dolor consequat et excepteur cupidatat ullamco anim. Elit culpa esse ea ea enim magna ullamco labore nisi.",
+        "spans": []
+      }
+    ],
+    "position": [
+      {
+        "type": "paragraph",
+        "text": "Anim quis commodo incididunt in ea labore reprehenderit ea id laboris do. Esse ut nulla culpa tempor dolor et. Ut veniam est laborum esse cupidatat qui ex voluptate.",
+        "spans": []
+      }
+    ],
+    "short_description": [
+      {
+        "type": "paragraph",
+        "text": "Esse cillum aliquip qui do commodo nulla eiusmod proident cupidatat incididunt. Consequat amet aliquip occaecat et anim proident enim duis sit cupidatat proident enim. Magna consequat pariatur nisi occaecat eu Lorem nulla amet reprehenderit enim elit.",
+        "spans": []
+      }
+    ],
+    "instagram_link": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    },
+    "linkedin_link": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    }
+  }
+}

@@ -11,16 +11,9 @@
   "lang": "en-us",
   "alternate_languages": [],
   "data": {
-    "title": [
-      {
-        "type": "heading1",
-        "text": "Silence",
-        "spans": []
-      }
-    ],
     "slices": [],
-    "metaTitle": "football",
-    "metaDescription": "living",
+    "metaTitle": "strength",
+    "metaDescription": "similar",
     "metaImage": {
       "dimensions": {
         "width": 900,
@@ -28,7 +21,7 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea"
+      "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c"
     }
   }
 }

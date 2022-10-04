@@ -43,6 +43,9 @@
             },
             "benefits": {
               "type": "SharedSlice"
+            },
+            "video": {
+              "type": "SharedSlice"
             }
           }
         }

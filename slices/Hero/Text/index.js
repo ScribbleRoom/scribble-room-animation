@@ -48,9 +48,11 @@ export const Text = ({ title, description }) => {
           ))}
         </m.h1>
       </div>
-      <div className={styles.description}>
-        <PrismicRichText field={description} />
-      </div>
+      {description.length > 0 && (
+        <div className={styles.description}>
+          <PrismicRichText field={description} />
+        </div>
+      )}
     </section>
   )
 }

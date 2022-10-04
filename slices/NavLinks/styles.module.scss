@@ -1,0 +1,7 @@
+@use "../../sass/abstracts/" as *;
+
+.active {
+  & a {
+    color: $c-ivory !important;
+  }
+}

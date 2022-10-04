@@ -10,6 +10,7 @@ import Projects from './Projects';
 import RichText from './RichText';
 import TeamMembers from './TeamMembers';
 import Testimonial from './Testimonial';
+import Video from './Video';
 
 export {
 	Benefits,
@@ -22,6 +23,7 @@ export {
 	RichText,
 	TeamMembers,
 	Testimonial,
+	Video,
 };
 
 export const components = {
@@ -35,4 +37,5 @@ export const components = {
 	rich_text: RichText,
 	team_members: TeamMembers,
 	testimonials: Testimonial,
+	video: Video,
 };

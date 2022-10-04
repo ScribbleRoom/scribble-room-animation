@@ -6,7 +6,7 @@ import { PrismicNextImage } from "@prismicio/next"
 export const Video = ({ show_logo, vimeo_video_id, logo, index }) => {
   useEffect(() => {
     if (window) {
-      const player = new Player(`vimeo-player-${index}`, {
+      new Player(`vimeo-player-${index}`, {
         id: vimeo_video_id,
         background: true,
         responsive: true,

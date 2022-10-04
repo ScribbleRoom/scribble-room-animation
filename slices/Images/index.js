@@ -1,4 +1,5 @@
 import { LeftAlignedImageWithText } from "./LeftAlignedImageWithText"
+import { NarrowImageWithText } from "./NarrowImageWithText"
 import { OneWideImage } from "./OneWideImage"
 import { RightAlignedImageWithText } from "./RightAlignedImageWithText"
 import { ThreeImages } from "./ThreeImages"
@@ -11,6 +12,7 @@ const Images = ({ slice: { primary, items, variation }, index }) => {
     "3Images": ThreeImages,
     leftAlignedImageWithText: LeftAlignedImageWithText,
     rightAlignedImageWithText: RightAlignedImageWithText,
+    narrowImageWithText: NarrowImageWithText,
   }
 
   const VariableComponent = componentMap[variation]

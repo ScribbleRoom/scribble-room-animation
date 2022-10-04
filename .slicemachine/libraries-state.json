@@ -91,7 +91,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Benefits/default/preview.png",
+            "width": 1140,
+            "height": 291
+          }
+        }
       },
       "call_to_action": {
         "library": "slices",
@@ -620,6 +626,34 @@
               },
               "items": {},
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "narrowImageWithText",
+              "name": "Narrow Image With Text",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Images",
+              "primary": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,em,hyperlink,list-item,o-list-item,strong,heading5,heading4,heading3"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
@@ -638,7 +672,7 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e"
+                "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
               }
             },
             "slice_type": "images"
@@ -657,7 +691,7 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f"
+                "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"
               },
               "image_2": {
                 "dimensions": {
@@ -666,7 +700,7 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+                "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89"
               }
             },
             "slice_type": "images"
@@ -694,7 +728,7 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468"
+                "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a"
               },
               "image_3": {
                 "dimensions": {
@@ -703,7 +737,7 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5"
+                "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0"
               }
             },
             "slice_type": "images"
@@ -722,12 +756,12 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab"
+                "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613"
               },
               "text": [
                 {
                   "type": "paragraph",
-                  "text": "Laborum incididunt sint Lorem qui aliqua. Do officia voluptate anim laboris ea fugiat duis culpa do tempor id aliquip. Nisi anim elit anim culpa consequat consequat aliquip veniam esse reprehenderit magna eu.",
+                  "text": "Ipsum quis aute adipisicing nisi.",
                   "spans": []
                 }
               ]
@@ -748,12 +782,38 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5"
               },
               "text": [
                 {
                   "type": "paragraph",
-                  "text": "Cupidatat ipsum amet aliquip incididunt culpa qui. Lorem ullamco anim deserunt dolore cillum sint nulla anim sunt enim nostrud consequat commodo adipisicing.",
+                  "text": "Labore consequat amet voluptate ipsum pariatur enim aliquip dolore minim qui magna officia ad cupidatat quis. Exercitation exercitation anim in reprehenderit fugiat excepteur sint eiusmod exercitation ut ut sit fugiat.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "images"
+          },
+          "narrowImageWithText": {
+            "variation": "narrowImageWithText",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+              },
+              "text": [
+                {
+                  "type": "paragraph",
+                  "text": "Aliqua pariatur cillum quis cupidatat nisi officia excepteur tempor aliqua consequat ad.",
                   "spans": []
                 }
               ]
@@ -790,6 +850,11 @@
             "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Images/rightAlignedImageWithText/preview.png",
             "width": 1140,
             "height": 726
+          },
+          "narrowImageWithText": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Images/narrowImageWithText/preview.png",
+            "width": 1140,
+            "height": 736
           }
         }
       },
@@ -1283,6 +1348,62 @@
             "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Testimonial/singleTestimonial/preview.png",
             "width": 921,
             "height": 319
+          }
+        }
+      },
+      "video": {
+        "library": "slices",
+        "id": "video",
+        "name": "Video",
+        "description": "Video",
+        "model": {
+          "id": "video",
+          "type": "SharedSlice",
+          "name": "Video",
+          "description": "Video",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Video",
+              "primary": {
+                "vimeo_video_id": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Vimeo Video ID",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "vimeo_video_id": "got"
+            },
+            "slice_type": "video"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Video/default/preview.png",
+            "width": 1140,
+            "height": 719
           }
         }
       }

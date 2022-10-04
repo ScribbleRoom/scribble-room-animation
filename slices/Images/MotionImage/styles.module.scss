@@ -24,3 +24,14 @@
     border-radius: 10px;
   }
 }
+
+.narrow_image {
+  position: relative;
+  width: 20%;
+  height: 20rem;
+
+  & img {
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}

@@ -97,6 +97,15 @@
           "blocks": 1
         }
       }
+    },
+    "job": {},
+    "jobs": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
     }
   },
   "slices": {

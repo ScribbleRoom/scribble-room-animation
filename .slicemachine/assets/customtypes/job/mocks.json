@@ -1,0 +1,70 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "job",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "job_title": [
+      {
+        "type": "heading1",
+        "text": "Fruit",
+        "spans": []
+      }
+    ],
+    "location": [
+      {
+        "type": "paragraph",
+        "text": "Veniam mollit officia veniam. Voluptate veniam proident deserunt culpa.",
+        "spans": []
+      }
+    ],
+    "employment_type": "Freelance",
+    "short_job_description": [
+      {
+        "type": "paragraph",
+        "text": "Nulla mollit eu occaecat exercitation ullamco sit eiusmod duis ipsum in eiusmod duis nostrud.",
+        "spans": []
+      }
+    ],
+    "full_job_description": [
+      {
+        "type": "paragraph",
+        "text": "Ex proident sunt nulla sit aliquip commodo dolore. Pariatur velit minim mollit eiusmod pariatur quis nisi sit occaecat occaecat duis velit est labore.",
+        "spans": []
+      }
+    ],
+    "qualifications_skills": [
+      {
+        "type": "paragraph",
+        "text": "Qui sit dolore magna nisi irure sit pariatur officia sunt. Officia sint aliquip quis officia excepteur sunt duis et pariatur ex aute.",
+        "spans": []
+      }
+    ],
+    "responsibilities": [
+      {
+        "type": "paragraph",
+        "text": "Cillum non voluptate occaecat proident eu ad laboris id velit proident Lorem.",
+        "spans": []
+      }
+    ],
+    "careers_email_address": "occasionally",
+    "metaTitle": "completely",
+    "metaDescription": "equator",
+    "metaImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68"
+    }
+  }
+}

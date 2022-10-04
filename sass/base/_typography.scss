@@ -107,7 +107,7 @@ p {
 
 ul,
 ol {
-  margin: 0.25rem 0 0.25rem 1.5rem;
+  list-style-position: inside;
 
   ::marker {
     color: $c-orange;

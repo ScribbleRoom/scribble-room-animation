@@ -1,0 +1,70 @@
+@use "../../../sass/abstracts/" as *;
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  border: 1px solid $c-charcoal-25;
+  border-radius: 10px;
+  padding: 1rem;
+  color: $c-charcoal;
+  transition: 200ms all;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border: 1px solid $c-charcoal-50;
+
+    & .apply {
+      & svg {
+        transform: translateX(0.25rem);
+      }
+    }
+  }
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.flex_container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.icon_and_text {
+  display: flex;
+  color: $c-charcoal-75;
+  gap: 0.25rem;
+  align-items: center;
+
+  & p {
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+
+  & svg {
+    color: $c-charcoal-50;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.apply {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  font-weight: 500;
+  color: $c-orange;
+  margin-top: 0.5rem;
+
+  & svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: 200ms all;
+  }
+}

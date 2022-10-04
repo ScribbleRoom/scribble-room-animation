@@ -78,13 +78,6 @@
           "allowTargetBlank": true,
           "multi": "list-item"
         }
-      },
-      "careers_email_address": {
-        "type": "Text",
-        "config": {
-          "label": "Careers Email Address",
-          "placeholder": ""
-        }
       }
     },
     "SEO": {

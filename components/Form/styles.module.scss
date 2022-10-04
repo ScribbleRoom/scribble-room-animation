@@ -1,18 +1,31 @@
+@use "../../sass/abstracts/" as *;
+
 .label {
   display: block;
   margin-bottom: 0.5rem;
+  font-weight: 500;
+
+  & .required {
+    color: $c-error;
+  }
 }
 
 .input {
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #959595;
+  background-color: $c-charcoal-5;
+  border: none;
   padding: 0.5rem;
+
+  &:focus {
+    outline: 2px solid $c-yellow;
+  }
 }
 
 .textarea {
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #959595;
+  background-color: $c-charcoal-5;
+  border: none;
   padding: 0.5rem;
 }

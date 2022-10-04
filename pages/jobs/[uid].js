@@ -1,6 +1,10 @@
 import * as prismicHelpers from "@prismicio/helpers"
 import { createClient, linkResolver } from "../../prismicio"
 import { Layout } from "../../components/Layout"
+import { PrismicRichText } from "@prismicio/react"
+import { ClockIcon, MapPinIcon } from "@heroicons/react/24/outline"
+import styles from "../../sass/pages/job-page.module.scss"
+import { JobApplicationForm } from "../../components/Form/Job"
 
 const Job = ({ data, url, lang, ...layout }) => {
   const seo = {
@@ -12,7 +16,56 @@ const Job = ({ data, url, lang, ...layout }) => {
     lang,
   }
 
-  return <Layout seo={seo} {...layout}></Layout>
+  return (
+    <Layout seo={seo} {...layout}>
+      <section className={`container ${styles.section}`}>
+        <div className={styles.title}>
+          <PrismicRichText field={data?.job_title} />
+        </div>
+      </section>
+      <section className={`container ${styles.section}`}>
+        <div>
+          <div className={styles.flex_container}>
+            <div className={styles.icon_and_text}>
+              <MapPinIcon />
+              <PrismicRichText field={data?.location} />
+            </div>
+            <div className={styles.icon_and_text}>
+              <ClockIcon />
+              <p>{data?.employment_type}</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <PrismicRichText field={data?.full_job_description} />
+        </div>
+        <div className={styles.qualifications_and_skills_container}>
+          <div>
+            <p>Qualifications/Skills</p>
+            <div>
+              <PrismicRichText field={data?.qualifications_skills} />
+            </div>
+          </div>
+          <div>
+            <p>Responsibilities</p>
+            <div>
+              <PrismicRichText field={data?.responsibilities} />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={`container ${styles.section}`}>
+        <h2>Apply Now</h2>
+        <p className={styles.apply_now_subtext}>
+          Fill in the form below or email{" "}
+          <a href="mailto:jobs@scribbleroomanimation.com">
+            jobs@scribbleroomanimation.com
+          </a>
+        </p>
+        <JobApplicationForm />
+      </section>
+    </Layout>
+  )
 }
 
 export async function getStaticPaths() {

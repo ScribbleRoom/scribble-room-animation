@@ -1,5 +1,8 @@
 import { createClient } from "../../prismicio"
 import { Layout } from "../../components/Layout"
+import { PrismicRichText } from "@prismicio/react"
+import { JobCard } from "../../components/Card/Job"
+import styles from "../../sass/pages/jobs-page.module.scss"
 
 const Jobs = ({ data, url, lang, jobs, ...layout }) => {
   const seo = {
@@ -11,11 +14,44 @@ const Jobs = ({ data, url, lang, jobs, ...layout }) => {
     lang,
   }
 
-  console.log(jobs)
-
   return (
     <Layout seo={seo} {...layout}>
-      <section></section>
+      <section className={`container ${styles.section}`}>
+        <div>
+          <PrismicRichText field={data?.title} />
+        </div>
+      </section>
+      <section className={`container ${styles.section}`}>
+        {jobs.length > 0 ? (
+          <ul className={styles.list}>
+            {jobs.map((job, index) => (
+              <li key={index}>
+                <JobCard
+                  title={job?.data?.job_title}
+                  description={job?.data?.short_job_description}
+                  link={job}
+                  employment_type={job?.data?.employment_type}
+                  location={job?.data?.location}
+                />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div className={styles.no_current_jobs_container}>
+            <p>There are no current positions available.</p>
+            <p>
+              Feel free to email us as we are always on the look out for
+              talented people.
+            </p>
+            <a
+              href="mailto:jobs@scribbleroomanimation.com"
+              className={styles.email}
+            >
+              jobs@scribbleroomanimation.com
+            </a>
+          </div>
+        )}
+      </section>
     </Layout>
   )
 }
@@ -23,20 +59,11 @@ const Jobs = ({ data, url, lang, jobs, ...layout }) => {
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData })
 
-  const fetchLinks = [
-    "job.job_title",
-    "job.short_description",
-    "job.employment_type",
-    "job.location",
-  ]
-
   const page = await client.getSingle("jobs")
   const header = await client.getSingle("header")
   const footer = await client.getSingle("footer")
   const socials = await client.getSingle("socials")
-  const jobs = await client.getAllByType("project", {
-    fetchLinks,
-  })
+  const jobs = await client.getAllByType("job")
 
   return {
     props: { header, footer, socials, jobs, ...page },

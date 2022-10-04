@@ -1,0 +1,46 @@
+@use "../abstracts/" as *;
+
+.section {
+  margin: 2rem auto;
+
+  @include mq("small") {
+    margin: 3rem auto;
+  }
+
+  & h1 {
+    text-align: center;
+  }
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+
+  @include mq("medium") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq("large") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.no_current_jobs_container {
+  & p {
+    font-size: 1.2rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: $c-orange;
+  margin-top: 1rem;
+}

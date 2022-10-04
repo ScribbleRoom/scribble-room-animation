@@ -40,6 +40,9 @@
             },
             "team_members": {
               "type": "SharedSlice"
+            },
+            "benefits": {
+              "type": "SharedSlice"
             }
           }
         }

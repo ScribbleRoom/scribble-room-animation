@@ -1,6 +1,98 @@
 {
   "slices": {
     "components": {
+      "benefits": {
+        "library": "slices",
+        "id": "benefits",
+        "name": "Benefits",
+        "description": "Benefits",
+        "model": {
+          "id": "benefits",
+          "type": "SharedSlice",
+          "name": "Benefits",
+          "description": "Benefits",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Benefits",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                }
+              },
+              "items": {
+                "benefit_title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Benefit Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "benefit_description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Benefit Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,strong,em,hyperlink"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "benefit_title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Aute adipisicing minim deserunt adipisicing mollit cupidatat ullamco consequat nisi. Officia in qui cupidatat minim.",
+                    "spans": []
+                  }
+                ],
+                "benefit_description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Culpa est eu nostrud ad ex aliquip. Sunt qui consectetur commodo aute ad deserunt laboris aliqua dolore consequat nulla id.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Except",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "benefits"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "call_to_action": {
         "library": "slices",
         "id": "call_to_action",
@@ -1108,7 +1200,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/TeamMembers/default/preview.png",
+            "width": 1140,
+            "height": 739
+          }
+        }
       },
       "testimonials": {
         "library": "slices",

@@ -5,7 +5,7 @@ import { components } from "../../../slices"
 import styles from "./styles.module.scss"
 import { AnimatePresence, m } from "framer-motion"
 
-export const Megamenu = ({ menuIsOpen, slices, socials }) => {
+export const Megamenu = ({ setMenuIsOpen, menuIsOpen, slices, socials }) => {
   const dialogAnimations = {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
@@ -41,7 +41,11 @@ export const Megamenu = ({ menuIsOpen, slices, socials }) => {
               <div className={styles.dialog_panel_contents}>
                 <nav>
                   <m.ul className={styles.nav_list} {...listAnimations}>
-                    <SliceZone slices={slices} components={components} />
+                    <SliceZone
+                      slices={slices}
+                      components={components}
+                      context={{ setMenuIsOpen: setMenuIsOpen }}
+                    />
                   </m.ul>
                 </nav>
                 <div className={styles.social_links}>

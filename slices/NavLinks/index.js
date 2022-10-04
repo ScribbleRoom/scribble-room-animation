@@ -3,7 +3,7 @@ import { m } from "framer-motion"
 import { useRouter } from "next/router"
 import styles from "./styles.module.scss"
 
-const NavLinks = ({ slice: { items } }) => {
+const NavLinks = ({ slice: { items }, context: { setMenuIsOpen } }) => {
   const router = useRouter()
 
   const getCurrentPathname = (pathname) => {
@@ -33,7 +33,9 @@ const NavLinks = ({ slice: { items } }) => {
       {...animations}
       className={getCurrentPathname(`/${link.slug}`)}
     >
-      <PrismicLink field={link}>{linkText}</PrismicLink>
+      <PrismicLink field={link} onClick={() => setMenuIsOpen(false)}>
+        {linkText}
+      </PrismicLink>
     </m.li>
   ))
 }

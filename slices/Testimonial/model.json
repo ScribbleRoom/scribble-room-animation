@@ -25,9 +25,7 @@
           "config": {
             "label": "Testimonial",
             "select": "document",
-            "customtypes": [
-              "testimonial"
-            ]
+            "customtypes": ["testimonial"]
           }
         }
       },

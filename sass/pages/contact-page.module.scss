@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.section {
+  padding: 2rem 1rem;
+
+  @include mq("small") {
+    padding: 3rem 1rem;
+  }
+}
+
+.google_map_heading {
+  margin-bottom: 1.5rem;
+}

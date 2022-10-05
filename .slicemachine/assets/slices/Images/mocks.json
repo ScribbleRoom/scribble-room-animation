@@ -2,9 +2,7 @@
   {
     "variation": "1FullWidthImage",
     "version": "sktwi1xtmkfgx8626",
-    "items": [
-      {}
-    ],
+    "items": [{}],
     "primary": {
       "image": {
         "dimensions": {
@@ -21,9 +19,7 @@
   {
     "variation": "2Images",
     "version": "sktwi1xtmkfgx8626",
-    "items": [
-      {}
-    ],
+    "items": [{}],
     "primary": {
       "image_1": {
         "dimensions": {
@@ -49,9 +45,7 @@
   {
     "variation": "3Images",
     "version": "sktwi1xtmkfgx8626",
-    "items": [
-      {}
-    ],
+    "items": [{}],
     "primary": {
       "image_1": {
         "dimensions": {
@@ -86,9 +80,7 @@
   {
     "variation": "leftAlignedImageWithText",
     "version": "sktwi1xtmkfgx8626",
-    "items": [
-      {}
-    ],
+    "items": [{}],
     "primary": {
       "image": {
         "dimensions": {
@@ -112,9 +104,7 @@
   {
     "variation": "rightAlignedImageWithText",
     "version": "sktwi1xtmkfgx8626",
-    "items": [
-      {}
-    ],
+    "items": [{}],
     "primary": {
       "image": {
         "dimensions": {
@@ -138,9 +128,7 @@
   {
     "variation": "narrowImageWithText",
     "version": "sktwi1xtmkfgx8626",
-    "items": [
-      {}
-    ],
+    "items": [{}],
     "primary": {
       "image": {
         "dimensions": {

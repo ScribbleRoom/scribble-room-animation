@@ -1,8 +1,8 @@
-import { SliceZone } from "@prismicio/react"
 import { createClient } from "../prismicio"
 import { Layout } from "../components/Layout"
-import { components } from "../slices"
 import { ContactForm } from "../components/Form/Contact"
+import { GoogleMap } from "../components/GoogleMap"
+import styles from "../sass/pages/contact-page.module.scss"
 
 const Contact = ({ data, url, lang, ...layout }) => {
   const seo = {
@@ -14,10 +14,18 @@ const Contact = ({ data, url, lang, ...layout }) => {
     lang,
   }
 
+  console.log(data)
+
   return (
     <Layout seo={seo} {...layout}>
-      <ContactForm />
-      <SliceZone slices={data?.slices} components={components} />
+      <section></section>
+      <section className={`container ${styles.section}`}>
+        <ContactForm />
+      </section>
+      <section className={`container ${styles.section}`}>
+        <h2 className={styles.google_map_heading}>Here&apos;s our Location</h2>
+        <GoogleMap />
+      </section>
     </Layout>
   )
 }

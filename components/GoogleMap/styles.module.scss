@@ -1,0 +1,11 @@
+@use "../../sass/abstracts/" as *;
+
+.map {
+  border: none;
+  width: 100%;
+  height: 20rem;
+
+  @include mq("medium") {
+    height: 30rem;
+  }
+}

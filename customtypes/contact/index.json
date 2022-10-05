@@ -13,6 +13,79 @@
           "allowTargetBlank": true,
           "single": "heading1"
         }
+      },
+      "contact_image": {
+        "type": "Image",
+        "config": {
+          "label": "Contact Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "contact_information": {
+        "type": "Group",
+        "config": {
+          "label": "Contact Information",
+          "fields": {
+            "contact_type": {
+              "type": "Text",
+              "config": {
+                "label": "Contact Type",
+                "placeholder": "General / Commercial"
+              }
+            },
+            "email_address": {
+              "type": "Text",
+              "config": {
+                "label": "Email Address",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "address_image": {
+        "type": "Image",
+        "config": {
+          "label": "Address Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "address_information": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Address Information",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "faqs": {
+        "type": "Group",
+        "config": {
+          "label": "FAQs",
+          "fields": {
+            "question": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Question",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph"
+              }
+            },
+            "answer": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Answer",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,em,hyperlink,list-item,o-list-item,strong,heading4,heading5"
+              }
+            }
+          }
+        }
       }
     },
     "SEO": {

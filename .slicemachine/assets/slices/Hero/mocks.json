@@ -2,9 +2,7 @@
   {
     "variation": "text",
     "version": "sktwi1xtmkfgx8626",
-    "items": [
-      {}
-    ],
+    "items": [{}],
     "primary": {
       "title": [
         {
@@ -26,9 +24,7 @@
   {
     "variation": "video",
     "version": "sktwi1xtmkfgx8626",
-    "items": [
-      {}
-    ],
+    "items": [{}],
     "primary": {
       "vimeo_video_id": "football",
       "show_logo": false,

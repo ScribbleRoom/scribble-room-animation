@@ -27,9 +27,7 @@
           "config": {
             "label": "Team Member",
             "select": "document",
-            "customtypes": [
-              "team_member"
-            ]
+            "customtypes": ["team_member"]
           }
         }
       },

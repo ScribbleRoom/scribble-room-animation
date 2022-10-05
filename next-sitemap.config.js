@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: "https://www.example.com", // TODO: Change site URL
+  siteUrl: "https://www.scribbleroomanimation.com",
   generateRobotsTxt: true,
   exclude: "/slice-simulator",
 }

@@ -1,7 +1,7 @@
 import { createClient } from "../prismicio"
 import { Layout } from "../components/Layout"
 import { ContactForm } from "../components/Form/Contact"
-import { GoogleMap } from "../components/GoogleMap"
+import { Map } from "../components/GoogleMap"
 import styles from "../sass/pages/contact-page.module.scss"
 
 const Contact = ({ data, url, lang, ...layout }) => {
@@ -24,7 +24,7 @@ const Contact = ({ data, url, lang, ...layout }) => {
       </section>
       <section className={`container ${styles.section}`}>
         <h2 className={styles.google_map_heading}>Here&apos;s our Location</h2>
-        <GoogleMap />
+        <Map />
       </section>
     </Layout>
   )

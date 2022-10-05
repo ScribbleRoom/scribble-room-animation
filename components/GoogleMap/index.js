@@ -1,10 +1,22 @@
 import styles from "./styles.module.scss"
+import { useMemo } from "react"
+import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api"
 
-export const GoogleMap = () => (
-  <iframe
-    className={styles.map}
-    loading="lazy"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCFayxv1j7RgE6ThoxFXw7nR4fJZvVP6B8
-    &q=Scribble+Room+Animation&zoom=17"
-  ></iframe>
-)
+export const Map = () => {
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+  })
+
+  const center = useMemo(
+    () => ({ lat: 51.44876269977327, lng: -2.5818604127367983 }),
+    []
+  )
+
+  if (!isLoaded) return null
+
+  return (
+    <GoogleMap zoom={17} center={center} mapContainerClassName={styles.map}>
+      <MarkerF position={center} />
+    </GoogleMap>
+  )
+}

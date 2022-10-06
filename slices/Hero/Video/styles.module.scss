@@ -13,9 +13,10 @@
 
 .video_container {
   position: relative;
-}
 
-.video {
+  width: 100vw;
+  height: 50vw;
+
   @include mq("large") {
     max-height: 65vh;
   }

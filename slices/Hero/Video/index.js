@@ -13,6 +13,7 @@ export const Video = ({ show_logo, vimeo_video_id, logo, index }) => {
         color: "ef8000",
         keyboard: false,
         dnt: true,
+        quality: "auto",
       })
     }
   })

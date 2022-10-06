@@ -12,7 +12,9 @@ const RichText = ({
     className={`container ${styles.section}
       ${variation === "narrowContent" && "narrow-container"}`}
   >
-    <PrismicRichText field={content} />
+    <div className="flow">
+      <PrismicRichText field={content} />
+    </div>
   </section>
 )
 

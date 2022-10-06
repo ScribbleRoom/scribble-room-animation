@@ -23,7 +23,9 @@ export const SingleTestimonial = (props) => {
           <span className={styles.quote}>
             <StartingQuote />
           </span>
-          <PrismicRichText field={testimonial} />
+          <div className="flow">
+            <PrismicRichText field={testimonial} />
+          </div>
           <span className={styles.quote}>
             <EndingQuote />
           </span>

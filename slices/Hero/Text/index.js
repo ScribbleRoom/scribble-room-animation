@@ -49,7 +49,7 @@ export const Text = ({ title, description }) => {
         </m.h1>
       </div>
       {description.length > 0 && (
-        <div className={styles.description}>
+        <div className={`${styles.description} flow`}>
           <PrismicRichText field={description} />
         </div>
       )}

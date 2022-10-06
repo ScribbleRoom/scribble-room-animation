@@ -36,7 +36,7 @@ const Job = ({ data, url, lang, ...layout }) => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="flow">
           <PrismicRichText field={data?.full_job_description} />
         </div>
         <div className={styles.qualifications_and_skills_container}>

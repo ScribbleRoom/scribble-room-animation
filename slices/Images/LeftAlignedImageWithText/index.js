@@ -6,7 +6,7 @@ export const LeftAlignedImageWithText = ({ image, text }) => (
   <section className={`${styles.section} container`}>
     <div className={styles.image_text_container}>
       <MotionImage image={image} index={0} />
-      <div>
+      <div className="flow">
         <PrismicRichText field={text} />
       </div>
     </div>

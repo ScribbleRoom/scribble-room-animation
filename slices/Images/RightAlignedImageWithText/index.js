@@ -5,7 +5,7 @@ import styles from "./styles.module.scss"
 export const RightAlignedImageWithText = ({ image, text }) => (
   <section className={`${styles.section} container`}>
     <div className={styles.image_text_container}>
-      <div>
+      <div className="flow">
         <PrismicRichText field={text} />
       </div>
       <MotionImage image={image} index={0} />

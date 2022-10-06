@@ -57,7 +57,11 @@ export const Faqs = ({ faqs }) => {
                     static
                     className={styles.disclosure_panel}
                   >
-                    <m.div {...content} layout className={styles.content}>
+                    <m.div
+                      {...content}
+                      layout
+                      className={`${styles.content} flow`}
+                    >
                       <PrismicRichText field={answer} />
                     </m.div>
                   </Disclosure.Panel>

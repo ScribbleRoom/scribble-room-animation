@@ -17,7 +17,7 @@ export const WideWithGreyBackground = ({
       <div className={styles.title}>
         <PrismicRichText field={title} />
       </div>
-      <div className={styles.description}>
+      <div className={`${styles.description} flow`}>
         <PrismicRichText field={description} />
       </div>
       <div className={styles.buttons}>

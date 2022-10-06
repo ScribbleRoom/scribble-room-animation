@@ -9,7 +9,7 @@ export const NarrowImageWithText = ({ image, text }) => (
       <div className={styles.image}>
         <PrismicNextImage field={image} layout="fill" />
       </div>
-      <div className={styles.text}>
+      <div className={`${styles.text} flow`}>
         <PrismicRichText field={text} />
       </div>
     </div>

@@ -49,7 +49,7 @@ const Project = ({ data, url, lang, ...layout }) => {
         <div className={styles.credits_accordion_container}>
           <CreditsAccordion credits={data?.credits_group} />
         </div>
-        <div>
+        <div className="flow">
           <PrismicRichText field={data?.project_description} />
         </div>
       </section>
@@ -59,7 +59,7 @@ const Project = ({ data, url, lang, ...layout }) => {
           {data?.services && (
             <div>
               <h2>Services</h2>
-              <div>
+              <div className="flow">
                 <PrismicRichText field={data?.services} />
               </div>
             </div>
@@ -67,7 +67,7 @@ const Project = ({ data, url, lang, ...layout }) => {
           {data?.deliverables && (
             <div>
               <h2>Deliverables</h2>
-              <div>
+              <div className="flow">
                 <PrismicRichText field={data?.deliverables} />
               </div>
             </div>

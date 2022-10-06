@@ -33,6 +33,12 @@
   width: 8rem;
   z-index: 150;
   position: relative;
+  cursor: pointer;
+  transition: 200ms all;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   @include mq("small") {
     display: block;

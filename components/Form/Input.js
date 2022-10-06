@@ -23,6 +23,7 @@ export const Input = ({
         placeholder={placeholder}
         autoComplete={autoComplete}
         className={styles.textarea}
+        rows={6}
       />
     ) : (
       <input

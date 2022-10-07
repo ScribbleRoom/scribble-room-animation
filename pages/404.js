@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Layout } from "../components/Layout"
 import { createClient } from "../prismicio"
+import styles from "../sass/pages/404-page.module.scss"
 
 const Custom404 = ({ lang, ...layout }) => {
   const seo = {
@@ -15,9 +16,15 @@ const Custom404 = ({ lang, ...layout }) => {
 
   return (
     <Layout seo={seo} {...layout}>
-      <h1>Page not found</h1>
-      <p>The page you were looking for unfortunately does not exist</p>
-      <Link href="/">Return to the homepage</Link>
+      <section className={`container ${styles.section}`}>
+        <h1 className={styles.title}>Page not found</h1>
+        <p className={styles.description}>
+          The page you were looking for unfortunately does not exist.
+        </p>
+        <div className={`${styles.link} button primary`}>
+          <Link href="/">Return to the homepage</Link>
+        </div>
+      </section>
     </Layout>
   )
 }

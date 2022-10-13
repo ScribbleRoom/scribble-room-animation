@@ -1,8 +1,8 @@
 import { createClient } from "../../prismicio"
 import { Layout } from "../../components/Layout"
-import { PrismicRichText } from "@prismicio/react"
 import { JobCard } from "../../components/Card/Job"
 import styles from "../../sass/pages/jobs-page.module.scss"
+import { m } from "framer-motion"
 
 const Jobs = ({ data, url, lang, jobs, ...layout }) => {
   const seo = {
@@ -14,11 +14,51 @@ const Jobs = ({ data, url, lang, jobs, ...layout }) => {
     lang,
   }
 
+  const titleCharacters = data?.title[0].text.split("")
+
+  const sentenceVariants = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+    },
+  }
+
+  const characterVariants = {
+    hidden: { opacity: 0, y: 15 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.12,
+        type: "spring",
+        stiffness: 250,
+        opacity: { type: "tween" },
+      },
+    }),
+  }
+
   return (
     <Layout seo={seo} {...layout}>
       <section className={`container ${styles.section}`}>
         <div>
-          <PrismicRichText field={data?.title} />
+          <m.h1
+            className={styles.title}
+            variants={sentenceVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            {titleCharacters.map((char, index) => (
+              <m.span
+                key={index}
+                custom={index}
+                variants={characterVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                {char}
+              </m.span>
+            ))}
+          </m.h1>
         </div>
       </section>
       <section className={`container ${styles.section}`}>

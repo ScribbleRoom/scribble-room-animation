@@ -8,6 +8,7 @@ import { MotionImage } from "../slices/Images/MotionImage"
 import { Fragment } from "react"
 import { AtSymbolIcon } from "@heroicons/react/24/outline"
 import { Faqs } from "../components/Accordion/Faqs"
+import { m } from "framer-motion"
 
 const Contact = ({ data, url, lang, ...layout }) => {
   const seo = {
@@ -19,13 +20,51 @@ const Contact = ({ data, url, lang, ...layout }) => {
     lang,
   }
 
-  console.log(data)
+  const titleCharacters = data?.title[0].text.split("")
+
+  const sentenceVariants = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+    },
+  }
+
+  const characterVariants = {
+    hidden: { opacity: 0, y: 15 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.12,
+        type: "spring",
+        stiffness: 250,
+        opacity: { type: "tween" },
+      },
+    }),
+  }
 
   return (
     <Layout seo={seo} {...layout}>
       <section className={`container ${styles.section}`}>
-        <div className={styles.title}>
-          <PrismicRichText field={data?.title} />
+        <div>
+          <m.h1
+            className={styles.title}
+            variants={sentenceVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            {titleCharacters.map((char, index) => (
+              <m.span
+                key={index}
+                custom={index}
+                variants={characterVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                {char}
+              </m.span>
+            ))}
+          </m.h1>
         </div>
         <div className={styles.flex_container}>
           <div>

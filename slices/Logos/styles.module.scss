@@ -17,13 +17,9 @@
 
   grid-template-columns: repeat(3, 1fr);
 
-  @include mq("small") {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
-  }
-
-  @include mq("large") {
+  @include mq("medium") {
     grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
   }
 
   & li {

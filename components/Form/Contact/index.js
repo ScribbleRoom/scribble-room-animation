@@ -26,6 +26,7 @@ export const ContactForm = () => {
       data-netlify="true"
       name="contact-form"
     >
+      <input type="hidden" name="form-name" value="contact-form" />
       <div className={styles.flex_container}>
         <Input
           name="full_name"

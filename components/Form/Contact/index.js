@@ -8,27 +8,14 @@ export const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const { register, handleSubmit } = useForm()
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&")
-  }
-
   const onSubmit = async (data) => {
     fetch(`/`, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "contact",
-        ...data,
-      }),
+      body: new URLSearchParams(data).toString(),
     })
-      .then()
+      .then(() => setIsSubmitted(true))
       .catch((error) => console.log(error))
-
-    setIsSubmitted(true)
   }
 
   return (

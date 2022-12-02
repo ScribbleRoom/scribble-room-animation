@@ -20,7 +20,7 @@ export const ContactForm = () => {
 
   return (
     <form
-      onSubmit={handleSubmit(onSubmit)}
+      // onSubmit={handleSubmit(onSubmit)}
       className={styles.form}
       method="POST"
       data-netlify="true"

@@ -8,14 +8,36 @@ export const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const { register, handleSubmit } = useForm()
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&")
+  }
+
   const onSubmit = async (data) => {
-    console.log(data)
-    // TODO: POST form data to API like Formspree
+    fetch(`/`, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        ...data,
+      }),
+    })
+      .then()
+      .catch((error) => console.log(error))
+
     setIsSubmitted(true)
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className={styles.form}
+      method="POST"
+      data-netlify="true"
+    >
       <div className={styles.flex_container}>
         <Input
           name="full_name"

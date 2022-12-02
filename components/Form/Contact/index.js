@@ -16,7 +16,7 @@ export const ContactForm = () => {
       .join("&")
   }
 
-  const onSubmit = async (data) => {
+  const handleFormSubmission = async (data) => {
     fetch(`/`, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -25,8 +25,14 @@ export const ContactForm = () => {
         ...data,
       }),
     })
-      .then(() => setIsSubmitted(true))
+      .then()
       .catch((error) => console.log(error))
+  }
+
+  const onSubmit = async (data) => {
+    await handleFormSubmission(data)
+
+    setIsSubmitted(true)
   }
 
   return (

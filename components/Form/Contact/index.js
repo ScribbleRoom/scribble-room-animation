@@ -58,7 +58,7 @@ export const ContactForm = () => {
         </p>
       ) : (
         <div className={styles.button_container}>
-          <button className={`button primary ${styles.button}`}>
+          <button type="submit" className={`button primary ${styles.button}`}>
             Submit
             <PaperAirplaneIcon />
           </button>

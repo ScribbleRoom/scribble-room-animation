@@ -17,13 +17,12 @@ export const ContactForm = () => {
   }
 
   const handleFormSubmission = async (data) => {
+    console.log(data)
+
     fetch(`/`, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "contact",
-        ...data,
-      }),
+      body: encode({ "form-name": "contact", ...data }),
     })
       .then()
       .catch((error) => console.log(error))
@@ -39,8 +38,6 @@ export const ContactForm = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       className={styles.form}
-      method="POST"
-      data-netlify="true"
       name="contact"
     >
       <input type="hidden" name="form-name" value="contact" />

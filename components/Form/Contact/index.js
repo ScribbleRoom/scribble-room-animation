@@ -8,11 +8,22 @@ export const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const { register, handleSubmit } = useForm()
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&")
+  }
+
   const onSubmit = async (data) => {
     fetch(`/`, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(data).toString(),
+      body: encode({
+        "form-name": "contact",
+        ...data,
+      }),
     })
       .then(() => setIsSubmitted(true))
       .catch((error) => console.log(error))
@@ -20,13 +31,13 @@ export const ContactForm = () => {
 
   return (
     <form
-      // onSubmit={handleSubmit(onSubmit)}
+      onSubmit={handleSubmit(onSubmit)}
       className={styles.form}
       method="POST"
       data-netlify="true"
-      name="contact-form"
+      name="contact"
     >
-      <input type="hidden" name="form-name" value="contact-form" />
+      <input type="hidden" name="form-name" value="contact" />
       <div className={styles.flex_container}>
         <Input
           name="full_name"

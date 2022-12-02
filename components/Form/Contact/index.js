@@ -24,6 +24,7 @@ export const ContactForm = () => {
       className={styles.form}
       method="POST"
       data-netlify="true"
+      name="contact-form"
     >
       <div className={styles.flex_container}>
         <Input

@@ -74,21 +74,23 @@ const Project = ({ data, url, lang, ...layout }) => {
           )}
         </section>
       )}
-      <section className={`container ${styles.related_projects_container}`}>
-        <h2>Related Projects</h2>
-        <ul className={styles.related_projects}>
-          {data?.related_projects.map(({ project }, index) => (
-            <li key={index}>
-              <ProjectCard
-                link={project}
-                title={project?.data?.project_title}
-                image={project?.data?.project_image}
-                index={index}
-              />
-            </li>
-          ))}
-        </ul>
-      </section>
+      {data?.related_projects.length > 0 && (
+        <section className={`container ${styles.related_projects_container}`}>
+          <h2>Related Projects</h2>
+          <ul className={styles.related_projects}>
+            {data?.related_projects.map(({ project }, index) => (
+              <li key={index}>
+                <ProjectCard
+                  link={project}
+                  title={project?.data?.project_title}
+                  image={project?.data?.project_image}
+                  index={index}
+                />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </Layout>
   )
 }

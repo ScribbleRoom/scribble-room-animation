@@ -17,14 +17,9 @@
 
 .business_logo {
   max-width: 10rem;
-  max-height: 6.25rem;
 
   & img {
     object-fit: contain;
-  }
-
-  @include mq("small") {
-    max-width: 12.5rem;
   }
 }
 

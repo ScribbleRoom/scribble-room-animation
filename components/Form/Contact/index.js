@@ -36,6 +36,7 @@ export const ContactForm = () => {
   return (
     <div>
       <form method="POST" name="test-form" data-netlify="true">
+        <input type="hidden" name="form-name" value="test-form" />
         <input type="text" name="test-field" id="test-field" />
         <button>Submit</button>
       </form>

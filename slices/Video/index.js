@@ -1,8 +1,10 @@
-import { Default } from "./Default"
+import { Vimeo } from "./Vimeo"
+import { YouTube } from "./YouTube"
 
 const Video = ({ slice: { primary, items, variation }, index }) => {
   const componentMap = {
-    default: Default,
+    vimeo: Vimeo,
+    youTube: YouTube,
   }
 
   const VariableComponent = componentMap[variation]

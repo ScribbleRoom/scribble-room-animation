@@ -279,6 +279,9 @@
     "Video": {
       "default": {
         "primary": {}
+      },
+      "youTube": {
+        "primary": {}
       }
     }
   }

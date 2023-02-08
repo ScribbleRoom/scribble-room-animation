@@ -5,8 +5,8 @@
   "description": "Video",
   "variations": [
     {
-      "id": "default",
-      "name": "Default",
+      "id": "vimeo",
+      "name": "Vimeo",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "Video",
@@ -15,6 +15,24 @@
           "type": "Text",
           "config": {
             "label": "Vimeo Video ID",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "youTube",
+      "name": "YouTube",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Video",
+      "primary": {
+        "youtube_video_id": {
+          "type": "Text",
+          "config": {
+            "label": "YouTube Video ID",
             "placeholder": ""
           }
         }

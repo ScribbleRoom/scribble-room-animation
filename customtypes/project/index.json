@@ -91,7 +91,9 @@
               "config": {
                 "label": "Project",
                 "select": "document",
-                "customtypes": ["project"]
+                "customtypes": [
+                  "project"
+                ]
               }
             }
           }
@@ -146,6 +148,12 @@
               "type": "SharedSlice"
             },
             "images": {
+              "type": "SharedSlice"
+            },
+            "call_to_action": {
+              "type": "SharedSlice"
+            },
+            "video": {
               "type": "SharedSlice"
             }
           }

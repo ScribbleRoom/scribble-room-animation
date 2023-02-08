@@ -2,9 +2,22 @@
   {
     "variation": "default",
     "version": "sktwi1xtmkfgx8626",
-    "items": [{}],
+    "items": [
+      {}
+    ],
     "primary": {
-      "vimeo_video_id": "got"
+      "vimeo_video_id": "age"
+    },
+    "slice_type": "video"
+  },
+  {
+    "variation": "youTube",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "youtube_video_id": "command"
     },
     "slice_type": "video"
   }

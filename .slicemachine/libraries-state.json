@@ -1363,8 +1363,8 @@
           "description": "Video",
           "variations": [
             {
-              "id": "default",
-              "name": "Default",
+              "id": "vimeo",
+              "name": "Vimeo",
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
               "description": "Video",
@@ -1373,6 +1373,24 @@
                   "type": "Text",
                   "config": {
                     "label": "Vimeo Video ID",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "youTube",
+              "name": "YouTube",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Video",
+              "primary": {
+                "youtube_video_id": {
+                  "type": "Text",
+                  "config": {
+                    "label": "YouTube Video ID",
                     "placeholder": ""
                   }
                 }
@@ -1390,7 +1408,18 @@
               {}
             ],
             "primary": {
-              "vimeo_video_id": "got"
+              "vimeo_video_id": "age"
+            },
+            "slice_type": "video"
+          },
+          "youTube": {
+            "variation": "youTube",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "youtube_video_id": "command"
             },
             "slice_type": "video"
           }
@@ -1400,8 +1429,13 @@
           "extension": "js"
         },
         "screenshotPaths": {
-          "default": {
-            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Video/default/preview.png",
+          "vimeo": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Video/vimeo/preview.png",
+            "width": 1140,
+            "height": 719
+          },
+          "youTube": {
+            "path": "/Users/louierichardson/Code/Freelancing/scribble-room-animation/slices/Video/youTube/preview.png",
             "width": 1140,
             "height": 719
           }

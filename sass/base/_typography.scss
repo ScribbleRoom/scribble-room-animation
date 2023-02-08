@@ -119,5 +119,10 @@ ol {
 }
 
 a {
-  color: inherit;
+  color: $c-orange;
+  transition: 200ms;
+
+  &:hover {
+    opacity: 75%;
+  }
 }

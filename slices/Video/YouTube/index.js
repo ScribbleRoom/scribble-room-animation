@@ -8,9 +8,9 @@ export const YouTube = ({ youtube_video_id }) => (
       height="315"
       src={`https://www.youtube-nocookie.com/embed/${youtube_video_id}`}
       title="YouTube video player"
-      frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
+      allowFullScreen
+      frameborder={0}
     ></iframe>
   </section>
 )

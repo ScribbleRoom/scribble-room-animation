@@ -36,15 +36,19 @@
 
 .title {
   position: absolute;
-  top: 2rem;
-  left: 1.5rem;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1.25rem;
+  right: 1.25rem;
   opacity: 0;
   transition: 200ms all;
   transform: translateY(1rem);
 
-  @include mq("medium") {
-    top: 2rem;
+  @include mq("large") {
     left: 2.5rem;
+    right: 2.5rem;
+    top: 2rem;
+    bottom: 2rem;
   }
 
   z-index: 10;

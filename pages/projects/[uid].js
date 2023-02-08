@@ -56,7 +56,7 @@ const Project = ({ data, url, lang, ...layout }) => {
       <SliceZone slices={data?.slices3} components={components} />
       {(data?.services || data?.deliverables) && (
         <section className={`container ${styles.services_and_deliverables}`}>
-          {data?.services && (
+          {data?.services.length > 0 && (
             <div>
               <h2>Services</h2>
               <div className="flow">
@@ -64,7 +64,7 @@ const Project = ({ data, url, lang, ...layout }) => {
               </div>
             </div>
           )}
-          {data?.deliverables && (
+          {data?.deliverables.length > 0 && (
             <div>
               <h2>Deliverables</h2>
               <div className="flow">

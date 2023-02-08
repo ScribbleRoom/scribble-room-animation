@@ -19,6 +19,8 @@ export const ContactForm = () => {
   const handleFormSubmission = async (data) => {
     console.log(data)
 
+    console.log(data)
+
     fetch(`/`, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -42,7 +44,7 @@ export const ContactForm = () => {
       onSubmit={handleSubmit(onSubmit)}
       className={styles.form}
       name="contact"
-      netlify
+      data-netlify="true"
     >
       <input type="hidden" name="form-name" value="contact" />
       <div className={styles.flex_container}>

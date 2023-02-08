@@ -22,7 +22,10 @@ export const ContactForm = () => {
     fetch(`/`, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...data }),
+      body: encode({
+        "form-name": "contact",
+        ...data,
+      }),
     })
       .then()
       .catch((error) => console.log(error))
@@ -39,6 +42,7 @@ export const ContactForm = () => {
       onSubmit={handleSubmit(onSubmit)}
       className={styles.form}
       name="contact"
+      netlify
     >
       <input type="hidden" name="form-name" value="contact" />
       <div className={styles.flex_container}>

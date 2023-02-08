@@ -10,22 +10,22 @@ import { InstagramLogo } from "../icons/InstagramLogo"
 export const SocialLinks = ({ socials }) => (
   <Fragment>
     {socials?.instagramLink?.url && (
-      <PrismicLink field={socials.instagramLink}>
+      <PrismicLink field={socials.instagramLink} aria-label="Instagram Link">
         <InstagramLogo />
       </PrismicLink>
     )}
     {socials?.linkedinLink?.url && (
-      <PrismicLink field={socials.linkedinLink}>
+      <PrismicLink field={socials.linkedinLink} aria-label="LinkedIn Link">
         <Linkedin />
       </PrismicLink>
     )}
     {socials?.vimeoLink?.url && (
-      <PrismicLink field={socials.vimeoLink}>
+      <PrismicLink field={socials.vimeoLink} aria-label="Vimeo Link">
         <VimeoLogo />
       </PrismicLink>
     )}
     {socials?.youtubeLink?.url && (
-      <PrismicLink field={socials.youtubeLink}>
+      <PrismicLink field={socials.youtubeLink} aria-label="YouTube Link">
         <YouTubeLogo />
       </PrismicLink>
     )}

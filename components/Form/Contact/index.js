@@ -34,52 +34,58 @@ export const ContactForm = () => {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className={styles.form}
-      name="contact"
-      data-netlify="true"
-      method="POST"
-      id="contact-form"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <div className={styles.flex_container}>
-        <Input
-          name="full_name"
-          label="Full Name"
-          type="text"
-          autoComplete="name"
-          required
-          register={register}
-        />
-        <Input
-          name="email"
-          label="Email"
-          type="email"
-          autoComplete="email"
-          required
-          register={register}
-        />
-      </div>
-      <Input
-        name="message"
-        label="Message"
-        required
-        type="textarea"
-        register={register}
-      />
-      {isSubmitted ? (
-        <p className={styles.submit_success_text}>
-          Thank you for contacting us! We will get back to you shortly.
-        </p>
-      ) : (
-        <div className={styles.button_container}>
-          <button type="submit" className={`button primary ${styles.button}`}>
-            Submit
-            <PaperAirplaneIcon />
-          </button>
+    <div>
+      <form method="POST" name="test-form" data-netlify="true">
+        <input type="text" name="test-field" id="test-field" />
+        <button>Submit</button>
+      </form>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className={styles.form}
+        name="contact"
+        data-netlify="true"
+        method="POST"
+        id="contact-form"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <div className={styles.flex_container}>
+          <Input
+            name="full_name"
+            label="Full Name"
+            type="text"
+            autoComplete="name"
+            required
+            register={register}
+          />
+          <Input
+            name="email"
+            label="Email"
+            type="email"
+            autoComplete="email"
+            required
+            register={register}
+          />
         </div>
-      )}
-    </form>
+        <Input
+          name="message"
+          label="Message"
+          required
+          type="textarea"
+          register={register}
+        />
+        {isSubmitted ? (
+          <p className={styles.submit_success_text}>
+            Thank you for contacting us! We will get back to you shortly.
+          </p>
+        ) : (
+          <div className={styles.button_container}>
+            <button type="submit" className={`button primary ${styles.button}`}>
+              Submit
+              <PaperAirplaneIcon />
+            </button>
+          </div>
+        )}
+      </form>
+    </div>
   )
 }

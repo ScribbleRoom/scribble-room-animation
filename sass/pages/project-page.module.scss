@@ -8,9 +8,14 @@
   & img {
     min-width: 100vw;
     object-fit: cover;
+    max-height: 20rem;
 
     @include mq("large") {
-      max-height: 75vh;
+      max-height: 30rem;
+    }
+
+    @include mq("x-large") {
+      max-height: 40rem;
     }
   }
 }

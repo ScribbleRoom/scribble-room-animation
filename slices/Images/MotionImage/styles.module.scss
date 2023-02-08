@@ -18,6 +18,8 @@
 
 .wide_image {
   position: relative;
+  display: flex;
+  justify-content: center;
 
   & img {
     object-fit: cover;

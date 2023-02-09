@@ -19,7 +19,10 @@ export const ContactForm = () => {
   const handleFormSubmission = async (data) => {
     fetch(`/`, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        Accept: "application/x-www-form-urlencoded",
+      },
       body: encode({
         "form-name": "contact",
         ...data,

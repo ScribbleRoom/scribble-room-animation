@@ -8,25 +8,24 @@ export const JobApplicationForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const { register, handleSubmit } = useForm()
 
-  // const encode = (data) => {
-  //   return Object.keys(data)
-  //     .map(
-  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-  //     )
-  //     .join("&")
-  // }
+  const encode = (data) => {
+    const formData = new FormData()
+    Object.keys(data).forEach((k) => {
+      formData.append(k, data[k])
+    })
 
-  // const handleFormSubmission = async (data) => {
-  //   console.log(data)
+    return formData
+  }
 
-  //   fetch(`/`, {
-  //     method: "POST",
-  //     body: encode({
-  //       "form-name": "job-application",
-  //       ...data,
-  //     }),
-  //   }).catch((error) => console.log(error))
-  // }
+  const handleFormSubmission = async (data) => {
+    fetch(`/`, {
+      method: "POST",
+      body: encode({
+        "form-name": "job-application",
+        ...data,
+      }),
+    }).catch((error) => console.log(error))
+  }
 
   const onSubmit = async (data) => {
     await handleFormSubmission(data)
@@ -35,7 +34,7 @@ export const JobApplicationForm = () => {
   }
   return (
     <form
-      // onSubmit={handleSubmit(onSubmit)}
+      onSubmit={handleSubmit(onSubmit)}
       className={styles.form}
       name="job-application"
       data-netlify="true"

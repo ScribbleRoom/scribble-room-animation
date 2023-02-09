@@ -8,12 +8,22 @@ export const JobApplicationForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const { register, handleSubmit } = useForm()
 
-  const onSubmit = async (data) => {
-    console.log(data)
-    // TODO: POST form data to API like Formspree
-    setIsSubmitted(true)
+  const handleFormSubmission = async (data) => {
+    fetch(`https://formcarry.com/s/6QX_HQ96ch`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({ ...data }),
+    }).catch((error) => console.log(error))
   }
 
+  const onSubmit = async (data) => {
+    await handleFormSubmission(data)
+
+    setIsSubmitted(true)
+  }
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
       <div className={styles.flex_container}>

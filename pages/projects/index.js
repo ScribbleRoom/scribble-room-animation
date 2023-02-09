@@ -59,7 +59,6 @@ export async function getStaticProps({ previewData }) {
 
   return {
     props: { header, footer, socials, projects, ...page },
-    revalidate: 60,
   }
 }
 

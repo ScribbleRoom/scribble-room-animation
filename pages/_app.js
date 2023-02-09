@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { PrismicProvider } from "@prismicio/react"
-import { PrismicPreview } from "@prismicio/next"
-import { linkResolver, repositoryName } from "../prismicio"
+import { linkResolver } from "../prismicio"
 import "../sass/main.scss"
 import { LazyMotion, domAnimation } from "framer-motion"
 
@@ -16,9 +15,7 @@ const App = ({ Component, pageProps }) => {
           </Link>
         )}
       >
-        <PrismicPreview repositoryName={repositoryName}>
-          <Component {...pageProps} />
-        </PrismicPreview>
+        <Component {...pageProps} />
       </PrismicProvider>
     </LazyMotion>
   )

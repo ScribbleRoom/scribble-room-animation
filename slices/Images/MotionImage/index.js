@@ -3,7 +3,7 @@ import { m, useInView } from "framer-motion"
 import { PrismicNextImage } from "@prismicio/next"
 import styles from "./styles.module.scss"
 
-export const MotionImage = ({ image, index, wideImage }) => {
+export const MotionImage = ({ image, index, wideImage, priority }) => {
   const ref = useRef(null)
   const isInView = useInView(ref, {
     amount: 0.3,
@@ -30,7 +30,11 @@ export const MotionImage = ({ image, index, wideImage }) => {
       ref={ref}
       custom={index}
     >
-      <PrismicNextImage field={image} layout={!wideImage && "fill"} />
+      <PrismicNextImage
+        field={image}
+        layout={!wideImage && "fill"}
+        priority={priority}
+      />
     </m.div>
   )
 }

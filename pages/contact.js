@@ -68,7 +68,7 @@ const Contact = ({ data, url, lang, ...layout }) => {
         </div>
         <div className={styles.flex_container}>
           <div>
-            <MotionImage image={data?.contact_image} />
+            <MotionImage image={data?.contact_image} priority />
             <h2>Contact</h2>
             <div>
               {data?.contact_information.map(
@@ -87,7 +87,7 @@ const Contact = ({ data, url, lang, ...layout }) => {
             </div>
           </div>
           <div>
-            <MotionImage image={data?.address_image} />
+            <MotionImage image={data?.address_image} priority />
             <h2>Address</h2>
             <div>
               <PrismicRichText field={data?.address_information} />

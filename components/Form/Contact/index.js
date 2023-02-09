@@ -27,6 +27,17 @@ export const ContactForm = () => {
     }).catch((error) => console.log(error))
   }
 
+  // const handleFormSubmission = async (data) => {
+  //   fetch(`https://formcarry.com/s/6QX_HQ96ch`, {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       Accept: "application/json",
+  //     },
+  //     body: JSON.stringify({ ...data }),
+  //   }).catch((error) => console.log(error))
+  // }
+
   const onSubmit = async (data) => {
     await handleFormSubmission(data)
 
@@ -34,58 +45,51 @@ export const ContactForm = () => {
   }
 
   return (
-    <div>
-      <form name="test-form" data-netlify="true">
-        <input type="hidden" name="form-name" value="test-form" />
-        <input type="text" name="test-field" id="test-field" />
-        <button>Submit</button>
-      </form>
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className={styles.form}
-        name="contact"
-        data-netlify="true"
-        id="contact-form"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <div className={styles.flex_container}>
-          <Input
-            name="full_name"
-            label="Full Name"
-            type="text"
-            autoComplete="name"
-            required
-            register={register}
-          />
-          <Input
-            name="email"
-            label="Email"
-            type="email"
-            autoComplete="email"
-            required
-            register={register}
-          />
-        </div>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className={styles.form}
+      name="contact"
+      data-netlify="true"
+      id="contact-form"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <div className={styles.flex_container}>
         <Input
-          name="message"
-          label="Message"
+          name="full_name"
+          label="Full Name"
+          type="text"
+          autoComplete="name"
           required
-          type="textarea"
           register={register}
         />
-        {isSubmitted ? (
-          <p className={styles.submit_success_text}>
-            Thank you for contacting us! We will get back to you shortly.
-          </p>
-        ) : (
-          <div className={styles.button_container}>
-            <button className={`button primary ${styles.button}`}>
-              Submit
-              <PaperAirplaneIcon />
-            </button>
-          </div>
-        )}
-      </form>
-    </div>
+        <Input
+          name="email"
+          label="Email"
+          type="email"
+          autoComplete="email"
+          required
+          register={register}
+        />
+      </div>
+      <Input
+        name="message"
+        label="Message"
+        required
+        type="textarea"
+        register={register}
+      />
+      {isSubmitted ? (
+        <p className={styles.submit_success_text}>
+          Thank you for contacting us! We will get back to you shortly.
+        </p>
+      ) : (
+        <div className={styles.button_container}>
+          <button type="submit" className={`button primary ${styles.button}`}>
+            Submit
+            <PaperAirplaneIcon />
+          </button>
+        </div>
+      )}
+    </form>
   )
 }

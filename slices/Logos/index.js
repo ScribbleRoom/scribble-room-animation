@@ -50,7 +50,7 @@ const Logos = ({ slice: { items } }) => {
         delay: i * 0.18,
         type: "spring",
         stiffness: 250,
-        opacity: { type: "tween" },
+        opacity: { type: "tween", duration: 0.35 },
       },
     }),
   }

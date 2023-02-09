@@ -14,7 +14,7 @@ export const ProjectCard = ({ link, title, image, index }) => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.2,
+        delay: i * 0.05,
         duration: 0.2,
       },
     }),

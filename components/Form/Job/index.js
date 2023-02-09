@@ -10,6 +10,7 @@ export const JobApplicationForm = () => (
     id="job-application"
     encType="multipart/form-data"
     method="POST"
+    action="/pages/success"
   >
     <input type="hidden" name="form-name" value="job-application" />
     <div className={styles.flex_container}>

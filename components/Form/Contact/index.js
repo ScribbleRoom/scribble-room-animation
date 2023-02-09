@@ -21,7 +21,6 @@ export const ContactForm = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        Accept: "application/x-www-form-urlencoded",
       },
       body: encode({
         "form-name": "contact",
@@ -29,17 +28,6 @@ export const ContactForm = () => {
       }),
     }).catch((error) => console.log(error))
   }
-
-  // const handleFormSubmission = async (data) => {
-  //   fetch(`https://formcarry.com/s/6QX_HQ96ch`, {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       Accept: "application/json",
-  //     },
-  //     body: JSON.stringify({ ...data }),
-  //   }).catch((error) => console.log(error))
-  // }
 
   const onSubmit = async (data) => {
     await handleFormSubmission(data)

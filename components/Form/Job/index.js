@@ -8,14 +8,24 @@ export const JobApplicationForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const { register, handleSubmit } = useForm()
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&")
+  }
+
   const handleFormSubmission = async (data) => {
-    fetch(`https://formcarry.com/s/6QX_HQ96ch`, {
+    fetch(`/`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
+        "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: JSON.stringify({ ...data }),
+      body: encode({
+        "form-name": "job-application",
+        ...data,
+      }),
     }).catch((error) => console.log(error))
   }
 
@@ -25,7 +35,14 @@ export const JobApplicationForm = () => {
     setIsSubmitted(true)
   }
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className={styles.form}
+      name="job-application"
+      data-netlify="true"
+      id="job-application"
+    >
+      <input type="hidden" name="form-name" value="job-application" />
       <div className={styles.flex_container}>
         <Input
           name="full_name"

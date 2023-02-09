@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Link from "next/link"
 import { Layout } from "../components/Layout"
 import { createClient } from "../prismicio"
@@ -16,6 +17,9 @@ const Custom404 = ({ lang, ...layout }) => {
 
   return (
     <Layout seo={seo} {...layout}>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
       <section className={`container ${styles.section}`}>
         <h1 className={styles.title}>Page not found</h1>
         <p className={styles.description}>

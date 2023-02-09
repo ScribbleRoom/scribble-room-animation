@@ -10,13 +10,13 @@ export const JobApplicationForm = () => (
     id="job-application"
     encType="multipart/form-data"
     method="POST"
-    action="/pages/success"
+    action="/success"
   >
     <input type="hidden" name="form-name" value="job-application" />
     <div className={styles.flex_container}>
       <div>
         <label className={inputStyles.label} htmlFor="full_name">
-          Full Name*
+          Full Name<span className={inputStyles.required}>*</span>
         </label>
         <input
           name="full_name"
@@ -28,7 +28,7 @@ export const JobApplicationForm = () => (
       </div>
       <div>
         <label className={inputStyles.label} htmlFor="email">
-          Email*
+          Email<span className={inputStyles.required}>*</span>
         </label>
         <input
           name="email"
@@ -43,7 +43,7 @@ export const JobApplicationForm = () => (
     <div className={styles.flex_container}>
       <div>
         <label className={inputStyles.label} htmlFor="cv">
-          Upload CV*
+          Upload CV<span className={inputStyles.required}>*</span>
         </label>
         <input
           name="cv"

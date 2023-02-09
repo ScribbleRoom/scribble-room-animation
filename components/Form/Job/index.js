@@ -9,19 +9,21 @@ export const JobApplicationForm = () => {
   const { register, handleSubmit } = useForm()
 
   const encode = (data) => {
-    const formData = new FormData()
-    Object.keys(data).forEach((k) => {
-      formData.append(k, data[k])
-    })
-
-    return formData
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&")
   }
 
   const handleFormSubmission = async (data) => {
+    console.log(data.cv[0])
+
     fetch(`/`, {
       method: "POST",
       body: encode({
         "form-name": "job-application",
+        cv: data?.cv[0],
         ...data,
       }),
     }).catch((error) => console.log(error))
@@ -39,6 +41,7 @@ export const JobApplicationForm = () => {
       name="job-application"
       data-netlify="true"
       id="job-application"
+      encType="multipart/form-data"
     >
       <input type="hidden" name="form-name" value="job-application" />
       <div className={styles.flex_container}>
@@ -74,7 +77,11 @@ export const JobApplicationForm = () => {
           register={register}
         />
       </div>
-      {isSubmitted ? (
+      <button className={`button primary ${styles.button}`}>
+        Submit
+        <PaperAirplaneIcon />
+      </button>
+      {/* {isSubmitted ? (
         <p className={styles.submit_success_text}>
           Thank you for submitting an job application form!
           <br />
@@ -87,7 +94,7 @@ export const JobApplicationForm = () => {
             <PaperAirplaneIcon />
           </button>
         </div>
-      )}
+      )} */}
     </form>
   )
 }

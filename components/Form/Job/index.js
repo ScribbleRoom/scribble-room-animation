@@ -17,11 +17,10 @@ export const JobApplicationForm = () => {
   }
 
   const handleFormSubmission = async (data) => {
+    console.log(data)
+
     fetch(`/`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
       body: encode({
         "form-name": "job-application",
         ...data,
@@ -41,6 +40,7 @@ export const JobApplicationForm = () => {
       name="job-application"
       data-netlify="true"
       id="job-application"
+      encType="multipart/form-data"
     >
       <input type="hidden" name="form-name" value="job-application" />
       <div className={styles.flex_container}>

@@ -6,7 +6,7 @@ import styles from "./styles.module.scss"
 export const MotionImage = ({ image, index, wideImage, priority }) => {
   const ref = useRef(null)
   const isInView = useInView(ref, {
-    amount: 0.3,
+    amount: 0.5,
     once: true,
   })
 
@@ -17,6 +17,7 @@ export const MotionImage = ({ image, index, wideImage, priority }) => {
       y: 0,
       transition: {
         delay: i * 0.25,
+        opacity: { duration: 0.5 },
       },
     }),
   }

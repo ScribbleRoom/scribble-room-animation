@@ -79,14 +79,13 @@ const Project = ({ data, url, lang, ...layout }) => {
           <h2>Related Projects</h2>
           <ul className={styles.related_projects}>
             {data?.related_projects.map(({ project }, index) => (
-              <li key={index}>
-                <ProjectCard
-                  link={project}
-                  title={project?.data?.project_title}
-                  image={project?.data?.project_image}
-                  index={index}
-                />
-              </li>
+              <ProjectCard
+                key={index}
+                link={project}
+                title={project?.data?.project_title}
+                image={project?.data?.project_image}
+                index={index}
+              />
             ))}
           </ul>
         </section>

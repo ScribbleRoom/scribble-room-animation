@@ -11,14 +11,13 @@ const Projects = ({
   <section className={`${styles.section} container`}>
     <ul className={styles.list}>
       {items.map(({ project }, index) => (
-        <li key={index}>
-          <ProjectCard
-            link={project}
-            title={project?.data?.project_title}
-            image={project?.data?.project_image}
-            index={index}
-          />
-        </li>
+        <ProjectCard
+          key={index}
+          link={project}
+          title={project?.data?.project_title}
+          image={project?.data?.project_image}
+          index={index}
+        />
       ))}
     </ul>
     {link && (

@@ -20,23 +20,24 @@ export const ProjectCard = ({ link, title, image, index }) => {
   }
 
   return (
-    <PrismicLink document={link} className={styles.card}>
-      <m.div
-        className={styles.content}
-        variants={cardVariants}
-        ref={ref}
-        custom={index}
-        initial="initial"
-        animate={isInView && "animate"}
-      >
-        <div className={styles.overlay} />
-        <h3 className={styles.title}>
-          <PrismicText field={title} />
-        </h3>
-        <div className={styles.image}>
-          <PrismicNextImage field={image} layout="fill" />
+    <m.li
+      variants={cardVariants}
+      ref={ref}
+      custom={index}
+      initial="initial"
+      animate={isInView && "animate"}
+    >
+      <PrismicLink document={link} className={styles.card}>
+        <div className={styles.content}>
+          <div className={styles.overlay} />
+          <h3 className={styles.title}>
+            <PrismicText field={title} />
+          </h3>
+          <div className={styles.image}>
+            <PrismicNextImage field={image} layout="fill" />
+          </div>
         </div>
-      </m.div>
-    </PrismicLink>
+      </PrismicLink>
+    </m.li>
   )
 }

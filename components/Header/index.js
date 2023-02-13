@@ -50,6 +50,7 @@ export const Header = ({ slices, large_logo, small_logo, socials }) => {
       <button
         className={`${styles.menu_button} ${menuIsOpen && styles.is_open}`}
         onClick={handleMenuState}
+        aria-label={menuIsOpen ? "close megamenu" : "open megamenu"}
       >
         <div className={styles.burger_icon} />
         <div className={styles.burger_icon} />

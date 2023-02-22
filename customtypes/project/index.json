@@ -38,6 +38,14 @@
           "thumbnails": []
         }
       },
+      "project_card_override": {
+        "type": "Image",
+        "config": {
+          "label": "Project Card Image Override",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "vimeo_video_id": {
         "type": "Text",
         "config": {

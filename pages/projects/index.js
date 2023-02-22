@@ -30,6 +30,7 @@ export async function getStaticProps({ previewData }) {
     "testimonial.author_business_position",
     "project.project_title",
     "project.project_image",
+    "project.project_card_override",
   ]
 
   const page = await client.getSingle("projects", { fetchLinks })
@@ -37,7 +38,11 @@ export async function getStaticProps({ previewData }) {
   const footer = await client.getSingle("footer")
   const socials = await client.getSingle("socials")
   const projects = await client.getAllByType("project", {
-    fetchLinks: ["project.project_title", "project.project_image"],
+    fetchLinks: [
+      "project.project_title",
+      "project.project_image",
+      "project.project_card_override",
+    ],
   })
 
   return {

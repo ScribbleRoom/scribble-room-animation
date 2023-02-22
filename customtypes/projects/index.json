@@ -21,24 +21,8 @@
             },
             "hero": {
               "type": "SharedSlice"
-            }
-          }
-        }
-      }
-    },
-    "Slices After Projects List": {
-      "slices2": {
-        "type": "Slices",
-        "fieldset": "Slice Zone",
-        "config": {
-          "choices": {
-            "testimonials": {
-              "type": "SharedSlice"
             },
-            "logos": {
-              "type": "SharedSlice"
-            },
-            "call_to_action": {
+            "projects": {
               "type": "SharedSlice"
             }
           }

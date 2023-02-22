@@ -12,8 +12,8 @@
   "alternate_languages": [],
   "data": {
     "slices": [],
-    "metatitle": "attention",
-    "metaDescription": "newspaper",
+    "metaTitle": "yard",
+    "metaDescription": "slope",
     "metaImage": {
       "dimensions": {
         "width": 900,
@@ -21,8 +21,7 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-    },
-    "slices2": []
+      "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea"
+    }
   }
 }

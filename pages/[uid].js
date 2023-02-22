@@ -41,6 +41,7 @@ export async function getStaticProps({ params, previewData }) {
     "testimonial.author_business_position",
     "project.project_title",
     "project.project_image",
+    "project.project_card_override",
     "team_member.image",
     "team_member.name",
     "team_member.position",

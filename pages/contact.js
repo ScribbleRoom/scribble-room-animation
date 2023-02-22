@@ -52,6 +52,7 @@ const Contact = ({ data, url, lang, ...layout }) => {
             variants={sentenceVariants}
             initial="hidden"
             animate="visible"
+            aria-label={data?.title[0].text}
           >
             {titleCharacters.map((char, index) => (
               <m.span

@@ -34,6 +34,7 @@ export const Text = ({ title, description }) => {
           variants={sentenceVariants}
           initial="hidden"
           animate="visible"
+          aria-label={title[0].text}
         >
           {titleCharacters.map((char, index) => (
             <m.span

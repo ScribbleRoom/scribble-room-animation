@@ -50,7 +50,27 @@
 
 .logo {
   position: relative;
-  max-width: 35vw;
-  max-height: 20rem;
-  height: 100%;
+
+  @include mq("medium") {
+    &.Small {
+      max-width: 30rem;
+      max-height: 20rem;
+    }
+
+    &.Medium {
+      max-width: 40rem;
+      max-height: 25rem;
+    }
+
+    &.Large {
+      max-width: 50rem;
+      max-height: 30rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
 }

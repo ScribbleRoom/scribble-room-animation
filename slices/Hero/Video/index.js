@@ -3,7 +3,14 @@ import Player from "@vimeo/player"
 import { Fragment, useEffect } from "react"
 import { PrismicNextImage } from "@prismicio/next"
 
-export const Video = ({ show_logo, vimeo_video_id, logo, index }) => {
+export const Video = ({
+  full_screen,
+  show_logo,
+  logo_size,
+  vimeo_video_id,
+  logo,
+  index,
+}) => {
   useEffect(() => {
     if (window) {
       new Player(`vimeo-player-${index}`, {
@@ -20,15 +27,17 @@ export const Video = ({ show_logo, vimeo_video_id, logo, index }) => {
 
   return (
     <section
-      className={styles.section}
-      id={`video-hero${show_logo && "-with-logo"}`}
+      className={`${styles.section} ${full_screen && styles.full_screen}`}
+      id={`video-hero${show_logo ? "-with-logo" : ""}`}
       name="video-hero"
     >
       <div className={styles.video_container}>
         {show_logo && (
           <Fragment>
             <div className={styles.logo_container}>
-              <PrismicNextImage field={logo} />
+              <div className={`${styles.logo} ${styles[logo_size]}`}>
+                <PrismicNextImage field={logo} objectFit="fill" />
+              </div>
             </div>
             <div className={styles.overlay} />
           </Fragment>

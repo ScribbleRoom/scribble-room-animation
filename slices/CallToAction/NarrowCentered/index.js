@@ -8,19 +8,30 @@ export const NarrowCentered = ({
   buttonIcon,
   link,
   linkText,
-}) => (
-  <section className={`narrow-container ${styles.section}`}>
-    <div className={styles.title}>
-      <PrismicRichText field={title} />
-    </div>
-    <div className={`${styles.description} flow`}>
-      <PrismicRichText field={description} />
-    </div>
-    <div className={styles.button}>
-      <PrismicLink field={link} className="button primary">
-        {linkText}
-        <ButtonIcon iconType={buttonIcon} />
-      </PrismicLink>
-    </div>
-  </section>
-)
+  text_size,
+}) => {
+  const textSize = {
+    Small: "text-sm",
+    Medium: "text-md",
+    Large: "text-lg",
+  }
+
+  return (
+    <section
+      className={`narrow-container ${styles.section} ${textSize[text_size]}`}
+    >
+      <div className={styles.title}>
+        <PrismicRichText field={title} />
+      </div>
+      <div className={`${styles.description} flow`}>
+        <PrismicRichText field={description} />
+      </div>
+      <div className={styles.button}>
+        <PrismicLink field={link} className="button primary">
+          {linkText}
+          <ButtonIcon iconType={buttonIcon} />
+        </PrismicLink>
+      </div>
+    </section>
+  )
+}

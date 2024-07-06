@@ -49,7 +49,24 @@
           "config": {
             "label": "Button Icon",
             "placeholder": "",
-            "options": ["Right Arrow", "Messages", "Paint Brush"]
+            "options": [
+              "Right Arrow",
+              "Messages",
+              "Paint Brush"
+            ]
+          }
+        },
+        "text_size": {
+          "type": "Select",
+          "config": {
+            "label": "Text Size",
+            "placeholder": "",
+            "options": [
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "Small"
           }
         }
       },
@@ -102,7 +119,11 @@
           "config": {
             "label": "Primary Link Icon",
             "placeholder": "",
-            "options": ["Right Arrow", "Messages", "Paint Brush"]
+            "options": [
+              "Right Arrow",
+              "Messages",
+              "Paint Brush"
+            ]
           }
         },
         "secondaryLink": {
@@ -126,7 +147,24 @@
           "config": {
             "label": "Secondary Link Icon",
             "placeholder": "",
-            "options": ["Right Arrow", "Messages", "Paint Brush"]
+            "options": [
+              "Right Arrow",
+              "Messages",
+              "Paint Brush"
+            ]
+          }
+        },
+        "text_size": {
+          "type": "Select",
+          "config": {
+            "label": "Text Size",
+            "placeholder": "",
+            "options": [
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "Small"
           }
         }
       },

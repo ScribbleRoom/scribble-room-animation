@@ -4,18 +4,27 @@ import styles from "./styles.module.scss"
 
 const RichText = ({
   slice: {
-    primary: { content },
+    primary: { content, text_size },
     variation,
   },
-}) => (
-  <section
-    className={`container ${styles.section}
-      ${variation === "narrowContent" && "narrow-container"}`}
-  >
-    <div className="flow">
-      <PrismicRichText field={content} />
-    </div>
-  </section>
-)
+}) => {
+  const textSize = {
+    Small: "text-sm",
+    Medium: "text-md",
+    Large: "text-lg",
+  }
+
+  return (
+    <section
+      className={`container ${styles.section} ${textSize[text_size]} ${
+        variation === "narrowContent" && "narrow-container"
+      }`}
+    >
+      <div className="flow">
+        <PrismicRichText field={content} />
+      </div>
+    </section>
+  )
+}
 
 export default RichText

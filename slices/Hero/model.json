@@ -28,6 +28,19 @@
             "allowTargetBlank": true,
             "multi": "strong,em,hyperlink,paragraph"
           }
+        },
+        "text_size": {
+          "type": "Select",
+          "config": {
+            "label": "Text Size",
+            "placeholder": "",
+            "options": [
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "Small"
+          }
         }
       },
       "items": {},
@@ -62,6 +75,28 @@
             "label": "Logo",
             "constraint": {},
             "thumbnails": []
+          }
+        },
+        "logo_size": {
+          "type": "Select",
+          "config": {
+            "label": "Logo Size",
+            "placeholder": "",
+            "options": [
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "Small"
+          }
+        },
+        "full_screen": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Screen",
+            "placeholder_false": "No",
+            "placeholder_true": "Yes",
+            "default_value": false
           }
         }
       },

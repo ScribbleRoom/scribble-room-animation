@@ -2,7 +2,7 @@ import { PrismicRichText } from "@prismicio/react"
 import styles from "./styles.module.scss"
 import { m } from "framer-motion"
 
-export const Text = ({ title, description }) => {
+export const Text = ({ title, description, text_size }) => {
   const titleCharacters = title[0].text.split("")
 
   const sentenceVariants = {
@@ -26,8 +26,14 @@ export const Text = ({ title, description }) => {
     }),
   }
 
+  const textSize = {
+    Small: "text-sm",
+    Medium: "text-md",
+    Large: "text-lg",
+  }
+
   return (
-    <section className={`container ${styles.section}`}>
+    <section className={`container ${styles.section} ${textSize[text_size]}`}>
       <div>
         <m.h1
           className={styles.title}

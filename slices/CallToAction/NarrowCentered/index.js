@@ -26,12 +26,14 @@ export const NarrowCentered = ({
       <div className={`${styles.description} flow`}>
         <PrismicRichText field={description} />
       </div>
-      <div className={styles.button}>
-        <PrismicLink field={link} className="button primary">
-          {linkText}
-          <ButtonIcon iconType={buttonIcon} />
-        </PrismicLink>
-      </div>
+      {link?.id && (
+        <div className={styles.button}>
+          <PrismicLink field={link} className="button primary">
+            {linkText}
+            <ButtonIcon iconType={buttonIcon} />
+          </PrismicLink>
+        </div>
+      )}
     </section>
   )
 }

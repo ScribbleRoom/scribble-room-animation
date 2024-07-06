@@ -28,16 +28,22 @@ export const WideWithGreyBackground = ({
         <div className={`${styles.description} flow`}>
           <PrismicRichText field={description} />
         </div>
-        <div className={styles.buttons}>
-          <PrismicLink field={primaryLink} className="button primary">
-            {primaryLinkText}
-            <ButtonIcon iconType={primaryLinkIcon} />
-          </PrismicLink>
-          <PrismicLink field={secondaryLink} className="button secondary">
-            {secondaryLinkText}
-            <ButtonIcon iconType={secondaryLinkIcon} />
-          </PrismicLink>
-        </div>
+        {(primaryLink?.id || secondaryLink?.id) && (
+          <div className={styles.buttons}>
+            {primaryLink?.id && (
+              <PrismicLink field={primaryLink} className="button primary">
+                {primaryLinkText}
+                <ButtonIcon iconType={primaryLinkIcon} />
+              </PrismicLink>
+            )}
+            {secondaryLink?.id && (
+              <PrismicLink field={secondaryLink} className="button secondary">
+                {secondaryLinkText}
+                <ButtonIcon iconType={secondaryLinkIcon} />
+              </PrismicLink>
+            )}
+          </div>
+        )}
       </div>
     </section>
   )

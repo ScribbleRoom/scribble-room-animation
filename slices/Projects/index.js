@@ -22,7 +22,7 @@ const Projects = ({
         />
       ))}
     </ul>
-    {link && (
+    {link?.id && (
       <div className={styles.button}>
         <PrismicLink document={link} className="button primary">
           {link_text}

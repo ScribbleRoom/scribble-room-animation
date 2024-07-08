@@ -1,7 +1,7 @@
 @use "../../../sass/abstracts/" as *;
 
 .card {
-  height: 15rem;
+  min-height: 20rem;
 
   @include mq('small') {
     height: 100%;

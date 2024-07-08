@@ -24,11 +24,19 @@ export const Video = ({
     }
   })
 
+  const scrollDown = () => {
+    const nextSection = document.querySelector(`.video-hero + section`)
+
+    if (nextSection) {
+      nextSection.scrollIntoView()
+    }
+  }
+
   return (
     <section
-      className={`${styles.section} ${full_screen && styles.full_screen}`}
-      id={`video-hero${show_logo ? "-with-logo" : ""}`}
-      name="video-hero"
+      className={`video-hero ${show_logo && "video-hero--with-logo"} ${
+        styles.section
+      } ${full_screen && styles.full_screen}`}
     >
       <div className={styles.video_container}>
         {show_logo && (
@@ -42,6 +50,26 @@ export const Video = ({
           </Fragment>
         )}
         <div id={`vimeo-player-${index}`} className={styles.video} />
+        {full_screen && (
+          <button
+            className={styles.scroll_down_button}
+            onClick={() => scrollDown()}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+              />
+            </svg>
+          </button>
+        )}
       </div>
     </section>
   )

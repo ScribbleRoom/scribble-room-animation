@@ -54,6 +54,40 @@
   }
 }
 
+.scroll_down_button {
+  background: none;
+  display: none;
+  border: none;
+  position: absolute;
+  padding: 0;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  width: 3.5rem;
+  height: 3.5rem;
+  z-index: 100;
+  animation: bounce 1s infinite;
+  cursor: pointer;
+
+  @include mq("large") {
+    display: block;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translate(-50%, 0)
+    }
+
+    50% {
+      transform: translate(-50%, -0.5rem);
+    }
+
+    100% {
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
 .video {
   padding-top: 56.25%;
   position: relative;

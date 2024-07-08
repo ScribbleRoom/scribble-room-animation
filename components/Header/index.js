@@ -16,11 +16,14 @@ export const Header = ({ slices, large_logo, small_logo, socials }) => {
   useEffect(() => {
     if (window) {
       /* If there is a video hero slice present, it will turn the header into a fixed element that overlaps the video */
-      if (document.getElementsByName("video-hero").length > 0) {
+      if (document.getElementsByClassName("video-hero").length > 0) {
         setFixedMenu(true)
       }
 
-      if (document.getElementById("video-hero-with-logo") && !menuIsOpen) {
+      if (
+        document.getElementsByClassName("video-hero--with-logo") &&
+        !menuIsOpen
+      ) {
         return setShowLogo(false)
       }
 

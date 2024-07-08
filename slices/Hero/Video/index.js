@@ -16,7 +16,6 @@ export const Video = ({
       new Player(`vimeo-player-${index}`, {
         id: vimeo_video_id,
         background: true,
-        responsive: true,
         color: "ef8000",
         keyboard: false,
         dnt: true,

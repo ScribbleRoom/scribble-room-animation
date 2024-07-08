@@ -1,27 +1,70 @@
 @use "../../../sass/abstracts/" as *;
 
 .section {
-  overflow: hidden;
   position: relative;
-
   margin-bottom: 2rem;
+  overflow: hidden;
 
   @include mq("small") {
     margin-bottom: 3rem;
   }
+
+  &.full_screen {
+    .video_container {
+      @include mq("large") {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        max-height: none;
+      }
+
+      .video {
+        @include mq("large") {
+          padding: 0;
+          position: unset;
+        }
+      }
+
+      iframe {
+        @include mq("large") {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100vw;
+          height: 100vh;
+          transform: translate(-50%, -50%);
+
+          @media (min-aspect-ratio: 16/9) {
+            height: 56.25vw;
+          }
+
+          @media (max-aspect-ratio: 16/9) {
+            width: 177.78vh;
+          }
+        }
+      }
+    }
+  }
 }
 
 .video_container {
-  position: relative;
-  width: 100vw;
-
-  @include mq("large") {
+  @include mq('large') {
     max-height: 80vh;
   }
 }
 
 .video {
-  height: 100%;
+  padding-top: 56.25%;
+  position: relative;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .overlay {

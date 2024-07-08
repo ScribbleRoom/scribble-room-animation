@@ -13,7 +13,7 @@ export const Video = ({
 }) => {
   useEffect(() => {
     if (window) {
-      new Player(`vimeo-player-${index}`, {
+      const player = new Player(`vimeo-player-${index}`, {
         id: vimeo_video_id,
         background: true,
         color: "ef8000",
@@ -21,6 +21,10 @@ export const Video = ({
         dnt: true,
         quality: "auto",
       })
+
+      return () => {
+        player.destroy()
+      }
     }
   })
 

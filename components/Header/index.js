@@ -21,7 +21,7 @@ export const Header = ({ slices, large_logo, small_logo, socials }) => {
       }
 
       if (
-        document.getElementsByClassName("video-hero--with-logo") &&
+        document.getElementsByClassName("video-hero--with-logo").length > 0 &&
         !menuIsOpen
       ) {
         return setShowLogo(false)
@@ -33,7 +33,7 @@ export const Header = ({ slices, large_logo, small_logo, socials }) => {
 
   return (
     <header className={`${styles.container} ${fixedMenu && styles.fixed_menu}`}>
-      <div className={showLogo === false ? styles.hide_logo : null}>
+      <div className={!showLogo ? styles.hide_logo : null}>
         <div className={styles.large_logo}>
           <Link href="/">
             <div>

@@ -3,6 +3,7 @@ import * as prismicHelpers from "@prismicio/helpers"
 import { createClient, linkResolver } from "../prismicio"
 import { Layout } from "../components/Layout"
 import { components } from "../slices"
+import { Video } from "../slices/Hero/Video"
 
 const Page = ({ data, url, lang, ...layout }) => {
   const seo = {
@@ -16,6 +17,7 @@ const Page = ({ data, url, lang, ...layout }) => {
 
   return (
     <Layout seo={seo} {...layout}>
+      {data?.vimeo_video_id && <Video vimeo_video_id={data?.vimeo_video_id} />}
       <SliceZone slices={data?.slices} components={components} />
     </Layout>
   )

@@ -3,6 +3,7 @@
   "label": "Page",
   "repeatable": true,
   "status": true,
+  "format": "custom",
   "json": {
     "Main": {
       "uid": {
@@ -10,6 +11,13 @@
         "config": {
           "label": "UID",
           "placeholder": ""
+        }
+      },
+      "vimeo_video_id": {
+        "type": "Text",
+        "config": {
+          "label": "Vimeo Video ID",
+          "placeholder": "Vimeo video used in hero"
         }
       },
       "slices": {

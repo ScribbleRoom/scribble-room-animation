@@ -16,6 +16,18 @@
   @include mq("medium") {
     flex-direction: row;
   }
+
+  &.text-top {
+    align-items: flex-start;
+  }
+
+  &.text-middle {
+    align-items: center;
+  }
+
+  &.text-bottom {
+    align-items: flex-end;
+  }
 }
 
 .image {

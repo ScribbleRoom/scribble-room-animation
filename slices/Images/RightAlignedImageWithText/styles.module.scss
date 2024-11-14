@@ -14,13 +14,24 @@
   gap: 1rem;
   width: 100%;
 
+  &.text-top {
+    align-items: flex-start;
+  }
+
+  &.text-middle {
+    align-items: center;
+  }
+
+  &.text-bottom {
+    align-items: flex-end;
+  }
+
   & div:first-of-type {
     width: 100%;
     order: 1;
   }
 
   @include mq("small") {
-    align-items: flex-end;
     flex-direction: row;
 
     & div:first-of-type {

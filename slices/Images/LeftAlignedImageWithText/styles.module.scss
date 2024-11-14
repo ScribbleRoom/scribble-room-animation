@@ -14,6 +14,18 @@
   gap: 1rem;
   width: 100%;
 
+  &.text-top {
+    align-items: flex-start;
+  }
+
+  &.text-middle {
+    align-items: center;
+  }
+
+  &.text-bottom {
+    align-items: flex-end;
+  }
+
   & div:last-of-type {
     width: 100%;
   }

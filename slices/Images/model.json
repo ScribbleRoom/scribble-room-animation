@@ -121,6 +121,19 @@
             ],
             "default_value": "Small"
           }
+        },
+        "text_alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Text Alignment",
+            "placeholder": "",
+            "options": [
+              "Top",
+              "Middle",
+              "Bottom"
+            ],
+            "default_value": "Top"
+          }
         }
       },
       "items": {},
@@ -162,6 +175,19 @@
             ],
             "default_value": "Small"
           }
+        },
+        "text_alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Text Alignment",
+            "placeholder": "",
+            "options": [
+              "Top",
+              "Middle",
+              "Bottom"
+            ],
+            "default_value": "Top"
+          }
         }
       },
       "items": {},
@@ -202,6 +228,19 @@
               "Large"
             ],
             "default_value": "Small"
+          }
+        },
+        "text_alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Text Alignment",
+            "placeholder": "",
+            "options": [
+              "Top",
+              "Middle",
+              "Bottom"
+            ],
+            "default_value": "Top"
           }
         }
       },

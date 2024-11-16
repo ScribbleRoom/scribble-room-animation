@@ -2,7 +2,7 @@ import styles from "./styles.module.scss"
 import Player from "@vimeo/player"
 import { useEffect } from "react"
 
-export const Vimeo = ({ vimeo_video_id, index }) => {
+export const Vimeo = ({ vimeo_video_id, index, orientation }) => {
   useEffect(() => {
     if (window) {
       new Player(`vimeo-player-${index}`, {
@@ -17,7 +17,10 @@ export const Vimeo = ({ vimeo_video_id, index }) => {
 
   return (
     <section className={`container ${styles.section}`}>
-      <div id={`vimeo-player-${index}`} className={styles.video} />
+      <div
+        id={`vimeo-player-${index}`}
+        className={`${styles.video} ${styles[orientation?.toLowerCase()]}`}
+      />
     </section>
   )
 }

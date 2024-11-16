@@ -17,6 +17,18 @@
             "label": "Vimeo Video ID",
             "placeholder": ""
           }
+        },
+        "orientation": {
+          "type": "Select",
+          "config": {
+            "label": "Orientation",
+            "placeholder": "",
+            "options": [
+              "Landscape",
+              "Portrait"
+            ],
+            "default_value": "Landscape"
+          }
         }
       },
       "items": {},

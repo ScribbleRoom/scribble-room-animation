@@ -6,4 +6,22 @@
   @include mq("small") {
     padding: 3rem 1rem;
   }
+
+  &:has(.portrait) {
+    padding: 0 1rem;
+  }
+}
+
+.video {
+  &.portrait {
+    > div {
+      padding: unset !important;
+    }
+
+    iframe {
+      position: unset !important;
+      height: 100vh !important;
+      padding: 2rem 0 !important;
+    }
+  }
 }

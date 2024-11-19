@@ -28,6 +28,13 @@
     & .title {
       opacity: 1;
       transform: translateY(0rem);
+      padding-bottom: 1rem;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.75)
+      );
     }
   }
 

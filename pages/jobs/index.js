@@ -37,6 +37,10 @@ const Jobs = ({ data, url, lang, jobs, ...layout }) => {
     }),
   }
 
+  if (!jobs) {
+    return null;
+  }
+
   return (
     <Layout seo={seo} {...layout}>
       <section className={`container ${styles.section}`}>

@@ -37,10 +37,6 @@ const Jobs = ({ data, url, lang, jobs, ...layout }) => {
     }),
   }
 
-  if (!jobs) {
-    return null;
-  }
-
   return (
     <Layout seo={seo} {...layout}>
       <section className={`container ${styles.section}`}>
@@ -104,7 +100,14 @@ const Jobs = ({ data, url, lang, jobs, ...layout }) => {
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData })
 
-  const page = await client.getSingle("jobs")
+  let page
+
+  try {
+    page = await client.getSingle("jobs")
+  } catch (e) {
+    return { notFound: true }
+  }
+
   const header = await client.getSingle("header")
   const footer = await client.getSingle("footer")
   const socials = await client.getSingle("socials")
